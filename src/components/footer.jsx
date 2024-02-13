@@ -46,8 +46,8 @@ export default function Footer() {
   const contact = [
     {
       'id' : 1,
-      'title' : 'zeromagic@gmail.com',
-      'link' : "#"
+      'title' : 'ndrohith09@gmail.com',
+      'link' : "mailto:ndrohith09@gmail.com"
     }
   ]
   return (

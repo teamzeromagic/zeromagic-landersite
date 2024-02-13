@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Logo from "../assets/logo.svg"
+import LogoFull from "../assets/logo-full.svg"
 
 const navigation = [
   { name: 'Product', href: '#' },
@@ -18,11 +19,11 @@ export default function Navbar() {
       <header className="absolute inset-x-0 top-0 z-50">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex items-center space-x-4 lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="/" className="-m-1.5 p-1.5">
               <img
                 className="h-5 w-auto" 
                 src={Logo}
-                alt=""
+                alt="Logo"
               />
             </a> 
               <span className='text-2xl font-bold text-gray-700' >Zeromagic</span>
@@ -47,9 +48,9 @@ export default function Navbar() {
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
             href="#"
-            className="rounded bg-darkblue px-3.5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="rounded bg-darkblue px-3.5 py-2 text-sm font-semibold text-white shadow-sm"
           >
-            Get started
+            Sign Up
           </a>
           </div>
         </nav>
@@ -58,11 +59,11 @@ export default function Navbar() {
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
+                <span className="sr-only">Zeromagic</span>
                 <img
                   className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                  alt=""
+                  src={LogoFull}
+                  alt="Logo"
                 />
               </a>
               <button
@@ -90,9 +91,9 @@ export default function Navbar() {
                 <div className="py-6">
                 <a
             href="#"
-            className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="rounded bg-darkblue px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm"
           >
-            Login
+            Sign Up
           </a>
                 </div>
               </div>

@@ -1,30 +1,32 @@
-import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
+import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, CodeBracketIcon,ArrowTrendingUpIcon } from '@heroicons/react/24/outline'
+
 
 const features = [
   {
-    name: 'Push to deploy',
+    name: 'Rapid Prototyping',
     description:
-      'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
-    icon: CloudArrowUpIcon,
-  },
-  {
-    name: 'SSL certificates',
-    description:
-      'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
-    icon: LockClosedIcon,
-  },
-  {
-    name: 'Simple queues',
-    description:
-      'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
+      'Quickly create functional prototypes of your applications without writing a single line of code, allowing you to iterate and refine your ideas faster.',
     icon: ArrowPathIcon,
   },
   {
-    name: 'Advanced security',
+    name: 'Customization',
     description:
-      'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
-    icon: FingerPrintIcon,
+      'Customize applications to meet specific business requirements and user needs without requiring extensive coding expertise, enabling rapid iteration and flexibility.',
+    icon: CodeBracketIcon,
   },
+  {
+    name: 'Push to deploy',
+    description:
+      'Deploy your applications instantly with the click of a button, eliminating the need for manual configuration and deployment processes, and getting your product to market faster.',
+    icon: CloudArrowUpIcon,
+  },
+  {
+    name: 'Scalability',
+    description:
+      'Build applications that can effortlessly scale to accommodate growing user bases and increased demand, ensuring a seamless user experience regardless of workload',
+    icon: ArrowTrendingUpIcon,
+  },
+
 ]
 
 export default function Feature() {
@@ -33,7 +35,7 @@ export default function Feature() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Everything you need to deploy your app
+          Transform concepts into reality, swiftly from <span className="text-green font-extrabold">design</span> to <span className="text-darkblue font-extrabold">deployment</span>
           </p> 
           <br />
         </div>

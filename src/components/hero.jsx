@@ -8,7 +8,7 @@ return (
         <img
           src={Workflow}
           alt="Product screenshot"
-          className="w-[80rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
+          className="lg:w-[80rem] sm:w-[40rem]  md:w-[50rem] w-[25rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
         //   width={2432}
         //   height={1442}
         />
