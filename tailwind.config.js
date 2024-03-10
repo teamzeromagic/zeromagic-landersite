@@ -8,8 +8,12 @@ module.exports = {
         green : '#009688',
         red : '#E2164B',
         yellow : '#FCCE30',
-        darkblue : '#203D76'
-      } 
+        darkblue : '#203D76',
+        base : '#15171AFF'
+      },
+      maxWidth: {
+        '8xl': '90rem', // Example custom maximum width
+      },
     },
   },
   plugins: [],

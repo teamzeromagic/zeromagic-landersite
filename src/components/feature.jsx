@@ -32,7 +32,7 @@ const features = [
 export default function Feature() {
   return (
     <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-8xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Transform concepts into reality, swiftly from <span className="text-green font-extrabold">design</span> to <span className="text-darkblue font-extrabold">deployment</span>

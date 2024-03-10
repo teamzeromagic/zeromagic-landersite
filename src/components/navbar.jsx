@@ -16,8 +16,41 @@ export default function Navbar() {
 
   return (
     <div className="bg-white">
-      <header className="absolute inset-x-0 top-0 z-50">
-        <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+      
+
+      {/* <header className="relative bg-white">
+        <div className='px-4 sm:px-6'>
+          <div className='flex justify-between items-center max-w-8xl mx-auto py-[3vmin] md:justify-start md:space-x-10'>
+            <div className='flex justify-start'>
+            <a href="/" className="-m-1.5 p-1.5">
+              <img
+                className="h-5 w-auto" 
+                src={Logo}
+                alt="Logo"
+              />
+            </a> 
+            </div>
+
+          <nav className='hidden md:flex space-x-10'>
+          <a href="/explore/" className="text-md text-gray-500 font-medium hover:text-gray-900">Explore</a>
+          <a href="/explore/" className="text-md text-gray-500 font-medium hover:text-gray-900">Explore</a>
+          <a href="/explore/" className="text-md text-gray-500 font-medium hover:text-gray-900">Explore</a>
+          <a href="/pricing/" className="text-md text-gray-500 font-medium hover:text-gray-900">Pricing</a>
+          </nav>
+
+
+          <div className="hidden md:flex items-center gap-7 justify-end md:flex-1 lg:w-0">
+           <a href="https://account.ghost.org/signin/" className="whitespace-nowrap text-md text-gray-500 font-medium hover:text-gray-900">Sign in</a>
+            <a href="https://account.ghost.org/signup/?view=fc5364bf9dbfa34954526becad136d4b" 
+            className="plausible-event-name=Signup-CTA-clicked whitespace-nowrap px-4 py-2 border border-transparent rounded-md shadow-sm text-sm text-white bg-primary plausible-event-trial_onboarding_test=control"><strong class="font-semibold">Get Started</strong> — free</a></div>
+
+          </div>
+        </div>
+      </header> */} 
+        {/* <div className='flex justify-between items-center max-w-8xl mx-auto py-[3vmin] md:justify-start md:space-x-10'> */}
+      <header className="absolute inset-x-0 top-0 z-50"> 
+        <div className=' max-w-8xl mx-auto overflow-hidden relative z-10  '>
+        <nav className="flex py-[3vmin] items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex items-center space-x-4 lg:flex-1">
             <a href="/" className="-m-1.5 p-1.5">
               <img
@@ -26,7 +59,7 @@ export default function Navbar() {
                 alt="Logo"
               />
             </a> 
-              <span className='text-2xl font-bold text-gray-700' >Zeromagic</span>
+              <span className='text-2xl font-bold tracking-tight text-slate-800' >zeromagic</span>
           </div>
           <div className="flex lg:hidden">
             <button
@@ -38,28 +71,29 @@ export default function Navbar() {
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-12">
+          <div className="hidden lg:flex lg:gap-x-12"> 
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-base font-semibold leading-6 text-gray-700">
+              <a key={item.name} href={item.href} className="text-base font-semibold leading-6 text-gray-500 hover:text-gray-900">
                 {item.name}
               </a>
             ))}
           </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a
-            href="#"
-            className="rounded bg-darkblue px-3.5 py-2 text-sm font-semibold text-white shadow-sm"
-          >
-            Sign Up
-          </a>
-          </div>
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center space-x-4">
+  <a href="https://account.ghost.org/signin/" className="whitespace-nowrap text-md text-gray-500 font-medium hover:text-gray-900">Sign in</a>
+
+  <a href="https://account.ghost.org/signup/?view=aa7ac8cd5e0a6993a177746279cc00d2" className="whitespace-nowrap px-4 py-2 border border-transparent rounded-md shadow-sm text-sm text-white bg-base">
+    <strong className="font-bold">Get Started</strong>
+  </a> 
+</div>
+
         </nav>
+
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Zeromagic</span>
+                <span className="sr-only tracking-tight text-slate-800">Zeromagic</span>
                 <img
                   className="h-8 w-auto"
                   src={LogoFull}
@@ -100,7 +134,9 @@ export default function Navbar() {
             </div>
           </Dialog.Panel>
         </Dialog>
+        </div>
       </header>
+    {/* </div> */}
     </div>
   )
 }
