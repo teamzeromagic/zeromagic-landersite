@@ -1,5 +1,7 @@
 {
   "projects": {
+    "site": "zeromagicsite",
+    "public": "public",
     "default": "zeromagicsite"
   }
 }
