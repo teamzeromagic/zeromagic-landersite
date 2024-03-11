@@ -1,4 +1,4 @@
-import  Video from "../assets/magicmock.mp4"
+import  Workflow from "../assets/workflow.svg"
 export const Hero = () => {
 return (
     <div className="overflow-hidden bg-white py-10">
@@ -13,9 +13,11 @@ return (
         /> */}
       <video 
       autoPlay={true}
+      style={{ borderRadius : '20px' , border : '8px solid #15171A'}}
       class="video w-full object-cover"
-      src="https://firebasestorage.googleapis.com/v0/b/zeromagicsite.appspot.com/o/minimock.mp4?alt=media&token=688ed712-3a02-4c48-974a-7c42539f7297" 
+      src="https://firebasestorage.googleapis.com/v0/b/zeromagicsite.appspot.com/o/minimock.mp4?alt=media&token=fc44b839-a81c-4d88-aba7-16f7acfed12c"
       preload="none" 
+      // poster={Workflow}
       muted={true}
       loop={true}> 
       </video>

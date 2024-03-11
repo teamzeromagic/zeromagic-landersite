@@ -33,7 +33,7 @@ export const Header = () => {
         <div className="my-6 flex items-center justify-center gap-x-6">
             <a
               class="text-xl text-white font-medium tracking-tight py-4 px-6 rounded-lg border border-base bg-base"
-              href="https://account.ghost.org/signup/?view=aa7ac8cd5e0a6993a177746279cc00d2"
+              href="#"
             >
               Join the waiting list
             </a>

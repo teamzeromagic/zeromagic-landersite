@@ -1,4 +1,5 @@
 import Authentication from "../assets/Authentication.png";
+import ServiceModules from "../assets/service-modules.svg"
 import Gif from "../assets/prototype.gif";
 import Rapid from "../assets/rapid.jpg";
 import Customization from "../assets/customization.png";
@@ -9,7 +10,7 @@ export const Content2 = () => {
   return (
     <div class="py-[8vmin] bg-base relative px-4 sm:px-6 overflow-hidden">
       <div class="max-w-8xl mx-auto text-gray-400">
-        <h2 class="text-xs font-semibold text-yellow uppercase tracking-widest">
+        <h2 class="text-xs font-semibold text-green uppercase tracking-widest">
         Focus on Your Vision
         </h2>
         <div class="font-semibold">
@@ -30,8 +31,8 @@ export const Content2 = () => {
         <img
           class="rounded-md md:rounded-xl lg:rounded-2xl"
           sizes="(max-width: 1400px) 1400px, 100vw"
-          src={Authentication}
-          alt="Ghost screenshot"
+          src={ServiceModules}
+          alt="Service Modules"
           width="3600"
           height="1992"
           loading="lazy"
@@ -43,16 +44,16 @@ export const Content2 = () => {
             Launch your Backend
           </h2>
           <p class="text-2xl md:text-4xl tracking-tight leading-tight">
-          Thousands are already <span class="text-white font-bold">creating</span> innovative solution 
+          Thousands are already <span class="text-white font-bold">creating</span> innovative  
             <br />
-            with our low code tool.
+            solution with low code tool.
           </p>
           <p class="text-2xl md:text-4xl tracking-tight leading-tight">
             <span class="text-white font-bold">Join the movement!</span>
           </p>
           <a
             class="plausible-event-name=Signup-CTA-clicked mt-10 text-xl text-black font-medium tracking-tight py-4 px-6 rounded-lg bg-yellow plausible-event-trial_onboarding_test=variant"
-            href="https://account.ghost.org/signup/?view=aa7ac8cd5e0a6993a177746279cc00d2"
+            href="#"
           >
             Get started now — free
           </a>
@@ -109,26 +110,24 @@ export const Content3 = () => {
         <div class="grid gap-[8vmin] grid-cols-12 items-center">
           <div class="col-span-12 lg:col-span-5 mt-12">
             <h2 class="text-xs text-green uppercase font-bold tracking-widest flex justify-between items-center">
-              <span class="flex-shrink-0">Easy site design</span>
+              <span class="flex-shrink-0">Happy Users, Happy You</span>
             </h2>
             <p class="mt-6 text-2xl lg:text-5xl font-bold text-white tracking-tight">
               From loging to logout , simplify authentication
             </p>
             <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
-              Build trust with your users through hassle-free authentication, no
-              coding skills necessary
+            Our authentication process is designed to build trust effortlessly, requiring no coding skills from your end. 
+              
             </p>
             <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
-              Go even further with hundreds of custom themes in our marketplace,
-              or build your own completely custom design from scratch.
+              Enjoy hassle-free access management and provide your users with a smooth and secure journey, enhancing their overall satisfaction.
             </p>
             <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
-              Your unique brand sits front and center, while Ghost runs things
-              in the background.
+            Enjoy peace of mind knowing your authentication needs are covered with simplicity at its core."
             </p>
             <a
               class="inline-block mt-6 text-xl lg:text-2xl text-green font-semibold tracking-tight hover:underline"
-              href="/themes/"
+              href="#"
             >
               Explore Authentication →
             </a>
@@ -253,12 +252,16 @@ export const Content5 = () => {
       <div class="max-w-8xl mx-auto">
         <div class="grid gap-[4vmin] grid-cols-12 items-center">
           <div class="flex justify-center col-span-12 md:col-span-7 h-auto md:h-[800px] relative">
-            <div class="relative h-full w-full overflow-hidden bg-gray-100 rounded-lg md:rounded-xl lg:rounded-2xl flex flex-col justify-center">
-            <img
-                  src={Gif}
-                  alt="Gif"
-                  loading="lazy"
-                />
+            <div class="relative h-full w-full overflow-hidden bg-white rounded-lg md:rounded-xl lg:rounded-2xl flex flex-col justify-center">
+            <video 
+      autoPlay={true} 
+      class="video w-full object-cover"
+      src="https://firebasestorage.googleapis.com/v0/b/zeromagicsite.appspot.com/o/addblock.mp4?alt=media&token=7b004866-3dd6-4069-a056-218ca503c6c0"       
+      preload="none" 
+      // poster={Workflow}
+      muted={true}
+      loop={true}> 
+      </video> 
 
               {/* <video
                 class="video w-full"
@@ -272,26 +275,25 @@ export const Content5 = () => {
           </div>
           <div class="col-span-12 md:col-span-5 mt-12">
             <h2 class="text-xs text-yellow uppercase font-bold tracking-widest flex justify-between items-center">
-              <span class="flex-shrink-0">Grow your audience</span>
+              <span class="flex-shrink-0">Click Your Way to Innovation</span>
             </h2>
             <p class="mt-6 text-2xl lg:text-5xl font-bold text-white tracking-tight leading-tight">
-              Transform those clicks into contacts.
+              Transform your clicks into features.
             </p>
             <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
-              Until now, building an indie publication with memberships and
-              subscriptions has been difficult and complicated.
+            Our platform enables anyone to build features with a click, accelerating your time to market and delivering business value faster.
             </p>
+           
             <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
-              Ghost makes it easy, with native signup forms that turn anonymous
-              views into logged-in members.
+            Business users can now contribute to building the functionalities they need, promoting collaboration and innovation within your organization.
             </p>
-            <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
-              Allow people to sign up for free, or purchase a paid subscription
-              to support your work across monthly and yearly premium tiers.
-            </p>
-            <p class="mt-6 text-xl lg:text-2xl text-white tracking-tight font-medium">
-              Hello, new friends.
-            </p>
+          
+            <a
+              class="inline-block mt-6 text-xl lg:text-2xl text-yellow font-semibold tracking-tight hover:underline"
+              href="#"
+            >
+              Explore Features →
+            </a>
           </div>
         </div>
       </div>

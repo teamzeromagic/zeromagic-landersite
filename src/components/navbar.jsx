@@ -79,9 +79,9 @@ export default function Navbar() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center space-x-4">
-  <a href="https://account.ghost.org/signin/" className="whitespace-nowrap text-md text-gray-500 font-medium hover:text-gray-900">Sign in</a>
+  <a href="#" className="whitespace-nowrap text-md text-gray-500 font-medium hover:text-gray-900">Sign in</a>
 
-  <a href="https://account.ghost.org/signup/?view=aa7ac8cd5e0a6993a177746279cc00d2" className="whitespace-nowrap px-4 py-2 border border-transparent rounded-md shadow-sm text-sm text-white bg-base">
+  <a href="#" className="whitespace-nowrap px-4 py-2 border border-transparent rounded-md shadow-sm text-sm text-white bg-base">
     <strong className="font-bold">Get Started</strong>
   </a> 
 </div>
@@ -93,7 +93,7 @@ export default function Navbar() {
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only tracking-tight text-slate-800">Zeromagic</span>
+                <span className="sr-only text-2xl font-bold tracking-tight text-slate-800">Zeromagic</span>
                 <img
                   className="h-8 w-auto"
                   src={LogoFull}
@@ -122,13 +122,12 @@ export default function Navbar() {
                     </a>
                   ))}
                 </div>
-                <div className="py-6">
-                <a
-            href="#"
-            className="rounded bg-darkblue px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm"
-          >
-            Sign Up
-          </a>
+                <div className="py-6 space-x-4"> 
+                <a href="#" className="whitespace-nowrap text-md text-gray-500 font-medium hover:text-gray-900">Sign in</a>
+
+<a href="#" className="whitespace-nowrap px-4 py-2 border border-transparent rounded-md shadow-sm text-sm text-white bg-base">
+  <strong className="font-bold">Get Started</strong>
+</a> 
                 </div>
               </div>
             </div>

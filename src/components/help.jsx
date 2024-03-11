@@ -30,7 +30,7 @@ const Help = () => {
               Dive into this comprehensive documentation for tutorials and resources to build applications efficiently. 
               </p>
               <a
-                href="/docs/"
+                href="#"
                 class="inline-block mt-7 whitespace-nowrap px-4 py-2 border rounded-md text-md font-semibold text-white border-white hover:text-black hover:bg-white transition-all"
               >
                 Check Docs →
