@@ -1,17 +1,54 @@
-import  Workflow from "../assets/workflow.svg"
+import  Workflow1 from "../assets/workflow.svg"
+import  Workflow from "../assets/Workflow.png"
+import  Auth from "../assets/Authentication.png"
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+
 export const Hero = () => {
 return (
     <div className="overflow-hidden bg-white py-10">
 
 <div class="relative px-4 sm:px-6">
   <div class="max-w-8xl mx-auto rounded-lg md:rounded-xl lg:rounded-2xl overflow-hidden relative z-10">
-  {/* <img
+      {/* <img
           src={Workflow}
           alt="Product screenshot"
           // className="lg:w-[80rem] sm:w-[40rem]  md:w-[50rem] w-[25rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
+         /> */} 
+
+          <Carousel
+          infiniteLoop={true}
+          showArrows={true}
+          autoPlay={true}
+          showStatus={false}
+          showIndicators={false}
+          showThumbs={false}
+          swipeable={true}
+          autoFocus={true}
+          
+         >
+          <img
+          src={Workflow}
+          alt="Product screenshot"
+          className="lg:w-[90rem] sm:w-[40rem]  md:w-[50rem] w-[25rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
       
-        /> */}
-      <video 
+        />
+
+        <img
+          src={Auth}
+          alt="Product screenshot"
+          className="lg:w-[90rem] sm:w-[40rem]  md:w-[50rem] w-[25rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
+      
+        />
+        <img
+          src={Workflow1}
+          alt="Product screenshot"
+          className="lg:w-[90rem] sm:w-[40rem]  md:w-[50rem] w-[25rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
+      
+        />
+          </Carousel>
+         
+      {/* <video 
       autoPlay={true}
       style={{ borderRadius : '20px' , border : '8px solid #15171A'}}
       class="video w-full object-cover"
@@ -20,7 +57,7 @@ return (
       // poster={Workflow}
       muted={true}
       loop={true}> 
-      </video>
+      </video> */}
       
       </div>
       <div class="absolute left-0 right-0 bottom-0 -mb-16 z-0 h-3/5 bg-darkblue"></div></div>

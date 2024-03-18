@@ -1,3 +1,5 @@
+import { Typewriter } from 'react-simple-typewriter'
+
 export const Header = () => {
   return (
     <div className="relative isolate px-6 lg:px-8">
@@ -15,10 +17,27 @@ export const Header = () => {
     </div> */} 
 
       <div class="mt-[18vmin] mx-auto max-w-8xl px-4 flex flex-col items-center gap-3 text-center">
-        <h1 class="text-[9vmin] md:text-[8vmin] tracking-tight leading-[1] font-bold text-gray-900">
-          <span class="block">Code-free features</span>
+        <h1 class="text-[9vmin] md:text-[8vmin] tracking-tight leading-[1] font-extrabold text-gray-900">
+          <span class="block">Build scalable 
+          <span class="text-darkblue font-extrabold">
+          <Typewriter 
+          cursor
+          // cursorBlinking
+          delaySpeed={2000}
+          deleteSpeed={100}
+          loop={0}
+          typeSpeed={100}
+          words={[
+            ' backends',
+            ' APIs', 
+            ' features', 
+          ]}    
+      />
+          </span>
+          </span>
           <span class="block">
-            <span class="text-darkblue font-extrabold">ready in minutes!</span>
+          at lightning speed!
+            {/* <span class="text-darkblue font-extrabold">at lightning speed!</span> */}
           </span>
         </h1>
 {/* 

@@ -1,23 +1,25 @@
 import Authentication from "../assets/Authentication.png";
-import ServiceModules from "../assets/service-modules.svg"
+import ServiceModules from "../assets/service-modules.svg";
 import Gif from "../assets/prototype.gif";
 import Rapid from "../assets/rapid.jpg";
 import Customization from "../assets/customization.png";
 import Deploy from "../assets/deploy.jpg";
 import Scalability from "../assets/scale.png";
+import Check from "../assets/check-mark.png";
+import Cross from "../assets/cross.png";
 
 export const Content2 = () => {
   return (
     <div class="py-[8vmin] bg-base relative px-4 sm:px-6 overflow-hidden">
       <div class="max-w-8xl mx-auto text-gray-400">
         <h2 class="text-xs font-semibold text-green uppercase tracking-widest">
-        Focus on Your Vision
+          Focus on Your Vision
         </h2>
         <div class="font-semibold">
           <div class="max-w-[400px] md:max-w-[600px]">
             <p class="mt-6 text-2xl md:text-4xl tracking-tight leading-tight">
-             
-              Our platform lets you focus on what matters, while we handle the complexity.
+              Our platform provides a centralized solution for managing all APIs
+              efficiently under one roof
             </p>
             <p class="mt-6 text-2xl md:text-4xl tracking-tight leading-tight">
               <span class="text-white font-bold">
@@ -44,7 +46,8 @@ export const Content2 = () => {
             Launch your Backend
           </h2>
           <p class="text-2xl md:text-4xl tracking-tight leading-tight">
-          Thousands are already <span class="text-white font-bold">creating</span> innovative  
+            Thousands are already{" "}
+            <span class="text-white font-bold">creating</span> innovative
             <br />
             solution with low code tool.
           </p>
@@ -116,14 +119,16 @@ export const Content3 = () => {
               From loging to logout , simplify authentication
             </p>
             <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
-            Our authentication process is designed to build trust effortlessly, requiring no coding skills from your end. 
-              
+              Our authentication process is designed to build trust
+              effortlessly, requiring no coding skills from your end.
             </p>
             <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
-              Enjoy hassle-free access management and provide your users with a smooth and secure journey, enhancing their overall satisfaction.
+              Enjoy hassle-free access management and provide your users with a
+              smooth and secure journey, enhancing their overall satisfaction.
             </p>
             <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
-            Enjoy peace of mind knowing your authentication needs are covered with simplicity at its core."
+              Enjoy peace of mind knowing your authentication needs are covered
+              with simplicity at its core."
             </p>
             <a
               class="inline-block mt-6 text-xl lg:text-2xl text-green font-semibold tracking-tight hover:underline"
@@ -162,10 +167,10 @@ export const Content4 = () => {
         <div class="grid gap-[4vmin] grid-cols-12 items-center">
           <div class="col-span-12">
             <p class="mt-12 text-2xl lg:text-5xl font-bold text-black tracking-tight leading-none">
-              Transform concepts into reality
+              Benefits of Zeromagic
             </p>
             <p class="max-w-3xl mt-6 text-xl lg:text-2xl md:text-4xl leading-normal font-normal text-slate-700 tracking-tight">
-              Swiftly transfer from design to deployment
+              Swiftly transfer you app from development to deployment
             </p>
           </div>
         </div>
@@ -236,7 +241,7 @@ export const Content4 = () => {
             </h3>
             <p class="max-w-xl mt-6 text-xl md:text-2xl leading-normal font-normal text-slate-700 tracking-tight">
               Build applications that can effortlessly scale to accommodate
-              growing user bases and increased demand, ensuring a seamless user
+              growing user bases and increased demand, ensuring a flexible user
               experience regardless of workload
             </p>
           </div>
@@ -253,15 +258,15 @@ export const Content5 = () => {
         <div class="grid gap-[4vmin] grid-cols-12 items-center">
           <div class="flex justify-center col-span-12 md:col-span-7 h-auto md:h-[800px] relative">
             <div class="relative h-full w-full overflow-hidden bg-white rounded-lg md:rounded-xl lg:rounded-2xl flex flex-col justify-center">
-            <video 
-      autoPlay={true} 
-      class="video w-full object-cover"
-      src="https://firebasestorage.googleapis.com/v0/b/zeromagicsite.appspot.com/o/addblock.mp4?alt=media&token=7b004866-3dd6-4069-a056-218ca503c6c0"       
-      preload="none" 
-      // poster={Workflow}
-      muted={true}
-      loop={true}> 
-      </video> 
+              <video
+                autoPlay={true}
+                class="video w-full object-cover"
+                src="https://firebasestorage.googleapis.com/v0/b/zeromagicsite.appspot.com/o/addblock.mp4?alt=media&token=7b004866-3dd6-4069-a056-218ca503c6c0"
+                preload="none"
+                // poster={Workflow}
+                muted={true}
+                loop={true}
+              ></video>
 
               {/* <video
                 class="video w-full"
@@ -281,13 +286,17 @@ export const Content5 = () => {
               Transform your clicks into features.
             </p>
             <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
-            Our platform enables anyone to build features with a click, accelerating your time to market and delivering business value faster.
+              Our platform enables anyone to build features with a click,
+              accelerating your time to market and delivering business value
+              faster.
             </p>
-           
+
             <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
-            Business users can now contribute to building the functionalities they need, promoting collaboration and innovation within your organization.
+              Business users can now contribute to building the functionalities
+              they need, promoting collaboration and innovation within your
+              organization.
             </p>
-          
+
             <a
               class="inline-block mt-6 text-xl lg:text-2xl text-yellow font-semibold tracking-tight hover:underline"
               href="#"
@@ -295,6 +304,276 @@ export const Content5 = () => {
               Explore Features →
             </a>
           </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const Comparison = () => {
+  return (
+    <div class="relative bg-white py-[8vmin]  overflow-hidden">
+      <div class="max-w-8xl mx-auto">
+        <h2 class="text-xs text-green uppercase font-bold tracking-widest flex justify-between items-center">
+          <span class="flex-shrink-0">Run your business</span>
+          <div class="w-full h-[2px] ml-5 bg-black opacity-10"></div>
+        </h2>
+        <div class="grid gap-[4vmin] grid-cols-12 items-center">
+          <div class="col-span-12">
+            <p class="mt-12 text-2xl lg:text-5xl font-bold text-black tracking-tight leading-none">
+            Why  <span className="text-green">ZeroMagic?</span> No code, just magic!
+            </p>
+            
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+
+      <div class="max-w-8xl mx-auto">
+        <div class="mx-44">
+          <div class="grid gap-[6vmin]  grid-cols-1  md:grid-cols-12 items-start">
+            <div className="relative col-span-12 px-5 pt-5 rounded-lg">
+              <table className="w-full border  table-fixed text-left text-sm text-gray-500 rtl:text-right dark:text-gray-400">
+                <thead className="dark:bgColor bg-slate-900 text-xs text-gray-700 dark:text-gray-400">
+                  <tr>
+                    <th scope="col" className="p-8 ">
+                      <h3 class="text-2xl text-white leading-none font-bold tracking-tight">
+                        With Zeromagic
+                      </h3>
+                    </th>
+                    <th scope="col" className="p-8">
+                      <h3 class="text-2xl text-white leading-none font-bold tracking-tight">
+                        Without Zeromagic
+                      </h3>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="text-dark-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600">
+                    <td className="px-10 text-lg font-semibold py-4">
+                      <div className="flex space-x-2">
+                        <img src={Check} alt="check" />
+                        <span>Quick setup</span>
+                      </div>
+                    </td>
+
+                    <td className="px-10 text-lg font-semibold py-4">
+                      <div className="flex space-x-2">
+                        <img src={Cross} alt="cross" />
+                        <span>Longer setup</span>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr className="text-dark-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600">
+                    <td className="px-10 text-lg font-semibold py-4">
+                      <div className="flex space-x-2">
+                        <img src={Check} alt="check" />
+                        <span>No installations</span>
+                      </div>
+                    </td>
+
+                    <td className="px-10 text-lg font-semibold py-4">
+                      <div className="flex space-x-2">
+                        <img src={Cross} alt="cross" />
+                        <span>Necessary installations</span>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr className="text-dark-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600">
+                    <td className="px-10 text-lg font-semibold py-4">
+                      <div className="flex space-x-2">
+                        <img src={Check} alt="check" />
+                        <span>Design the connection</span>
+                      </div>
+                    </td>
+
+                    <td className="px-10 text-lg font-semibold py-4">
+                      <div className="flex space-x-2">
+                        <img src={Cross} alt="cross" />
+                        <span>Complicated design</span>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr className="text-dark-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600">
+                    <td className="px-10 text-lg font-semibold py-4">
+                      <div className="flex space-x-2">
+                        <img src={Check} alt="check" />
+                        <span>Build with ease</span>
+                      </div>
+                    </td>
+
+                    <td className="px-10 text-lg font-semibold py-4">
+                      <div className="flex space-x-2">
+                        <img src={Cross} alt="cross" />
+                        <span>Complex coding</span>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr className="text-dark-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600">
+                    <td className="px-10 text-lg font-semibold py-4">
+                      <div className="flex space-x-2">
+                        <img src={Check} alt="check" />
+                        <span>Effortless Deployment</span>
+                      </div>
+                    </td>
+
+                    <td className="px-10 text-lg font-semibold py-4">
+                      <div className="flex space-x-2">
+                        <img src={Cross} alt="cross" />
+                        <span>Deployment dilemma</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr className="text-dark-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600">
+                    <td className="px-10 text-lg font-semibold py-4">
+                      <div className="flex space-x-2">
+                        <img src={Check} alt="check" />
+                        <span>Hours, Not Days</span>
+                      </div>
+                    </td>
+
+                    <td className="px-10 text-lg font-semibold py-4">
+                      <div className="flex space-x-2">
+                        <img src={Cross} alt="cross" />
+                        <span>Takes days to complete</span>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          {/*             
+          <div class="col-span-6 ">
+            <img
+              src={Rapid}
+              alt="Rapid Prototyping"
+              className="rounded-lg object-cover w-full h-80"
+              loading="lazy"
+            />
+            <h3 class="mt-10 text-2xl lg:text-3xl font-bold text-black tracking-tight leading-none">
+              With Zeromagic.
+            </h3>
+            <p class="max-w-xl mt-6 text-xl md:text-2xl leading-normal font-normal text-slate-700 tracking-tight">
+              Quick setup <br />
+              Design the connection <br />
+              Build with ease <br />
+              Effortless Deployment <br />
+              Hours, Not Days
+            </p>
+          </div>
+          <div class="col-span-6">
+            <img
+              src={Customization}
+              alt="Customization"
+              className="rounded-lg object-cover w-full h-80"
+              loading="lazy"
+            />
+            <h3 class="mt-10 text-2xl lg:text-3xl font-bold text-black tracking-tight leading-none">
+              Without Zeromagic
+            </h3>
+            <p class="max-w-xl mt-6 text-xl md:text-2xl leading-normal font-normal text-slate-700 tracking-tight">
+              Longer setup <br />
+              Necessary installation <br />
+              Complicated design <br />
+              Complex codeing <br />
+              Deployment dilemma <br />
+              Takes days to complete.
+            </p>
+          </div> */}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const Steps = () => {
+  return (
+    <div class="relative bg-white py-[8vmin] px-4 sm:px-6 overflow-hidden">
+      <div class="max-w-8xl mx-auto">
+        <h2 class="text-xs text-red uppercase font-bold tracking-widest flex justify-between items-center">
+          <span class="flex-shrink-0">Run your business</span>
+          <div class="w-full h-[2px] ml-5 bg-black opacity-10"></div>
+        </h2>
+        <div class="grid gap-[4vmin] grid-cols-12 items-center">
+          <div class="col-span-12">
+            <p class="mt-12 text-2xl lg:text-5xl font-bold text-black tracking-tight leading-none">
+            From Concept to API in Minutes
+            </p>
+            <p class="max-w-3xl mt-6 text-xl lg:text-2xl md:text-4xl leading-normal font-normal text-slate-700 tracking-tight">
+            Develop like a ninja, deploy like a rocket
+            </p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="max-w-8xl mx-auto">
+        <div class="grid gap-[6vmin] grid-cols-1 md:grid-cols-12 items-start">
+          <div class="col-span-3">
+            <img
+              src={Rapid}
+              alt="Rapid Prototyping"
+              className="rounded-lg object-cover w-full h-80"
+              loading="lazy"
+            />
+            <h3 class="mt-10 text-2xl lg:text-3xl font-bold text-black tracking-tight leading-none">              
+              Create
+            </h3>
+            <p class="max-w-xl mt-6 text-xl leading-normal font-normal text-slate-700 tracking-tight">
+            Establish REST endpoints, define authentication with built-in functionality, and validate your data.
+            </p>
+          </div>
+          <div class="col-span-3">
+            <img
+              src={Customization}
+              alt="Customization"
+              className="rounded-lg object-cover w-full h-80"
+              loading="lazy"
+            />
+            <h3 class="mt-10 text-2xl lg:text-3xl font-bold text-black tracking-tight leading-none">
+              Build
+            </h3>
+            <p class="max-w-xl mt-6 text-xl leading-normal font-normal text-slate-700 tracking-tight"> 
+                 Combine APIs, third-party tools, database queries seamlessly, enabling smooth data flow and interaction.
+            </p>
+          </div>
+
+          <div class="col-span-3">
+            <img
+              src={Deploy}
+              alt="Deploy"
+              className="rounded-lg object-cover w-full h-80"
+              loading="lazy"
+            />
+            <h3 class="mt-10 text-2xl lg:text-3xl font-bold text-black tracking-tight leading-none">
+              Deploy
+            </h3>
+            <p class="max-w-xl mt-6 text-xl leading-normal font-normal text-slate-700 tracking-tight">
+            Go live in seconds with a single click, eliminating the need for devops tasks. Our platform handles hosting for you.
+            </p>
+          </div> 
+
+          <div class="col-span-3">
+            <img
+              src={Scalability}
+              alt="Scale"
+              className="rounded-lg object-cover w-full h-80"
+              loading="lazy"
+            />
+            <h3 class="mt-10 text-2xl lg:text-3xl font-bold text-black tracking-tight leading-none">
+            Scale
+            </h3>
+            <p class="max-w-xl mt-6 text-xl leading-normal font-normal text-slate-700 tracking-tight">
+            Build applications that can effortlessly scale to accommodate growing user bases and increased demand
+             </p>
+          </div> 
+
         </div>
       </div>
     </div>

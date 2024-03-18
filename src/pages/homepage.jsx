@@ -1,5 +1,5 @@
 import Content from "../components/content";
-import { Content2, Content3, Content4, Content5 } from "../components/content2";
+import { Content2, Content3, Content4, Content5, Comparison, Steps } from "../components/content2";
 import Feature from "../components/feature"; 
 import { Header } from "../components/header";
 import Help from "../components/help";
@@ -15,10 +15,11 @@ const HomePage = () => {
        <TextBlock />
        {/* <Pitch /> */}
        {/* <Feature /> */}
-       <Content4 />
+       <Steps />
+       <Comparison />
        <Content3 />
        {/* <Content />  */}
-       <Content5 />
+       <Content5 /> 
        <Help />
        <Content2 /> 
         </>
