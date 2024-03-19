@@ -1,5 +1,5 @@
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
-import Authentication from "../assets/Authentication.png"
+import Authentication from "../assets/authentication.png"
 
 export default function Content() {
   return (

@@ -1,4 +1,4 @@
-import Authentication from "../assets/Authentication.png";
+import Authentication from "../assets/authentication.png";
 import ServiceModules from "../assets/service-modules.svg";
 import Gif from "../assets/prototype.gif";
 import Rapid from "../assets/rapid.jpg";
@@ -142,7 +142,7 @@ export const Content3 = () => {
               <div class="max-w-7xl rounded-3xl overflow-hidden bg-white">
                 <img
                   src={Authentication}
-                  alt="Ghost screenshot"
+                  alt="Authentication"
                   loading="lazy"
                 />
 
