@@ -315,7 +315,7 @@ export const Comparison = () => {
     <div class="relative bg-white py-[8vmin]  overflow-hidden">
       <div class="max-w-8xl mx-auto">
         <h2 class="text-xs text-green uppercase font-bold tracking-widest flex justify-between items-center">
-          <span class="flex-shrink-0">Run your business</span>
+          <span class="flex-shrink-0">Hassle-Free Development</span>
           <div class="w-full h-[2px] ml-5 bg-black opacity-10"></div>
         </h2>
         <div class="grid gap-[4vmin] grid-cols-12 items-center">
@@ -497,7 +497,7 @@ export const Steps = () => {
     <div class="relative bg-white py-[8vmin] px-4 sm:px-6 overflow-hidden">
       <div class="max-w-8xl mx-auto">
         <h2 class="text-xs text-red uppercase font-bold tracking-widest flex justify-between items-center">
-          <span class="flex-shrink-0">Run your business</span>
+          <span class="flex-shrink-0">Business Made Easy</span>
           <div class="w-full h-[2px] ml-5 bg-black opacity-10"></div>
         </h2>
         <div class="grid gap-[4vmin] grid-cols-12 items-center">
