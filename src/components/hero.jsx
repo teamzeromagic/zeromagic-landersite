@@ -37,7 +37,7 @@ export const Hero = () => {
                 <div class="h-[35rem] bg-gradient-to-t from-black via-transparent to-transparent"></div>
               </div>
               <div class="absolute inset-x-0 bottom-3 flex justify-center items-center ">
-                <p class="my-10 text-2xl lg:text-3xl font-bold text-white/95 tracking-normal leading-none">
+                <p class="my-10 text-xl sm:text-md lg:text-3xl font-bold text-white/95 tracking-normal leading-none">
                 Create APIs in Minutes Without Code
                 </p>
               </div>
@@ -56,7 +56,7 @@ export const Hero = () => {
                 <div class="h-[35rem] bg-gradient-to-t from-black via-transparent to-transparent"></div>
               </div>
               <div class="absolute inset-x-0 bottom-3 flex justify-center items-center ">
-                <p class="my-10 text-2xl lg:text-3xl font-bold text-white/95 tracking-normal leading-none">
+                <p class="my-10 text-xl sm:text-md lg:text-3xl font-bold text-white/95 tracking-normal leading-none">
                 Simplify user management with secure auth options 
                 </p>
               </div>
@@ -73,7 +73,7 @@ export const Hero = () => {
                 <div class="h-[35rem] bg-gradient-to-t from-black via-transparent to-transparent"></div>
               </div>
               <div class="absolute inset-x-0 bottom-3 flex justify-center items-center ">
-                <p class="my-10 text-2xl lg:text-3xl font-bold text-white/95 tracking-normal leading-none">
+                <p class="my-10 text-xl sm:text-md lg:text-3xl font-bold text-white/95 tracking-normal leading-none">
                 Create customized templates for a more engaging user experience 
                 </p>
               </div>

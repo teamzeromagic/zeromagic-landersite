@@ -331,7 +331,7 @@ export const Comparison = () => {
       <br />
 
       <div class="max-w-8xl mx-auto">
-        <div class="mx-44">
+        <div class="lg:mx-44 mx-auto">
           <div class="grid gap-[6vmin]  grid-cols-1  md:grid-cols-12 items-start">
             <div className="relative col-span-12 px-5 pt-5 rounded-lg">
               <table className="w-full border  table-fixed text-left text-sm text-gray-500 rtl:text-right dark:text-gray-400">
@@ -350,15 +350,15 @@ export const Comparison = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="text-dark-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600">
-                    <td className="px-10 text-lg font-semibold py-4">
+                  <tr className="text-dark-xl lg:text-lg sm:text-md dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600">
+                    <td className="px-10 font-semibold py-4">
                       <div className="flex space-x-2">
                         <img src={Check} alt="check" />
                         <span>Quick setup</span>
                       </div>
                     </td>
 
-                    <td className="px-10 text-lg font-semibold py-4">
+                    <td className="px-10  font-semibold py-4">
                       <div className="flex space-x-2">
                         <img src={Cross} alt="cross" />
                         <span>Longer setup</span>
@@ -366,15 +366,15 @@ export const Comparison = () => {
                     </td>
                   </tr>
 
-                  <tr className="text-dark-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600">
-                    <td className="px-10 text-lg font-semibold py-4">
+                  <tr className="text-dark-xl lg:text-lg sm:text-md dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600">
+                    <td className="px-10  font-semibold py-4">
                       <div className="flex space-x-2">
                         <img src={Check} alt="check" />
                         <span>No installations</span>
                       </div>
                     </td>
 
-                    <td className="px-10 text-lg font-semibold py-4">
+                    <td className="px-10  font-semibold py-4">
                       <div className="flex space-x-2">
                         <img src={Cross} alt="cross" />
                         <span>Necessary installations</span>
@@ -382,15 +382,15 @@ export const Comparison = () => {
                     </td>
                   </tr>
 
-                  <tr className="text-dark-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600">
-                    <td className="px-10 text-lg font-semibold py-4">
+                  <tr className="text-dark-xl lg:text-lg sm:text-md dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600">
+                    <td className="px-10 font-semibold py-4">
                       <div className="flex space-x-2">
                         <img src={Check} alt="check" />
                         <span>Design the connection</span>
                       </div>
                     </td>
 
-                    <td className="px-10 text-lg font-semibold py-4">
+                    <td className="px-10 font-semibold py-4">
                       <div className="flex space-x-2">
                         <img src={Cross} alt="cross" />
                         <span>Complicated design</span>
@@ -398,15 +398,15 @@ export const Comparison = () => {
                     </td>
                   </tr>
 
-                  <tr className="text-dark-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600">
-                    <td className="px-10 text-lg font-semibold py-4">
+                  <tr className="text-dark-xl lg:text-lg sm:text-md dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600">
+                    <td className="px-10 font-semibold py-4">
                       <div className="flex space-x-2">
                         <img src={Check} alt="check" />
                         <span>Build with ease</span>
                       </div>
                     </td>
 
-                    <td className="px-10 text-lg font-semibold py-4">
+                    <td className="px-10 font-semibold py-4">
                       <div className="flex space-x-2">
                         <img src={Cross} alt="cross" />
                         <span>Complex coding</span>
@@ -414,30 +414,30 @@ export const Comparison = () => {
                     </td>
                   </tr>
 
-                  <tr className="text-dark-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600">
-                    <td className="px-10 text-lg font-semibold py-4">
+                  <tr className="text-dark-xl lg:text-lg sm:text-md dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600">
+                    <td className="px-10 font-semibold py-4">
                       <div className="flex space-x-2">
                         <img src={Check} alt="check" />
                         <span>Effortless Deployment</span>
                       </div>
                     </td>
 
-                    <td className="px-10 text-lg font-semibold py-4">
+                    <td className="px-10 font-semibold py-4">
                       <div className="flex space-x-2">
                         <img src={Cross} alt="cross" />
                         <span>Deployment dilemma</span>
                       </div>
                     </td>
                   </tr>
-                  <tr className="text-dark-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600">
-                    <td className="px-10 text-lg font-semibold py-4">
+                  <tr className="text-dark-xl lg:text-lg sm:text-md dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600">
+                    <td className="px-10 font-semibold py-4">
                       <div className="flex space-x-2">
                         <img src={Check} alt="check" />
-                        <span>Hours, Not Days</span>
+                        <span>Minutes, Not Days</span>
                       </div>
                     </td>
 
-                    <td className="px-10 text-lg font-semibold py-4">
+                    <td className="px-10 font-semibold py-4">
                       <div className="flex space-x-2">
                         <img src={Cross} alt="cross" />
                         <span>Takes days to complete</span>
