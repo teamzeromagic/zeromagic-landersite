@@ -4,6 +4,7 @@ import Feature from "../components/feature";
 import { Header } from "../components/header";
 import Help from "../components/help";
 import { Hero } from "../components/hero"; 
+import Partner from "../components/partners";
 import Pitch from "../components/pitch";
 import  TextBlock  from "../components/textblock";
 
@@ -12,14 +13,12 @@ const HomePage = () => {
         <> 
        <Header /> 
        <Hero />
-       <TextBlock />
-       {/* <Pitch /> */}
-       {/* <Feature /> */}
+       <TextBlock /> 
        <Steps />
        <Comparison />
-       <Content3 />
-       {/* <Content />  */}
+       <Content3 /> 
        <Content5 /> 
+       <Partner />
        <Help />
        <Content2 /> 
         </>

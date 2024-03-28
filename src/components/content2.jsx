@@ -40,6 +40,7 @@ export const Content2 = () => {
           loading="lazy"
         />
       </div>
+      
       <div class="py-[8vmin] mt-10 text-center bg-base text-gray-400 font-semibold">
         <div class="max-w-8xl mx-auto flex flex-col items-center gap-6">
           <h2 class="text-xs font-semibold text-yellow uppercase tracking-widest">
