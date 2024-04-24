@@ -8,6 +8,8 @@ import Scalability from "../assets/scale.png";
 import Check from "../assets/check-mark.png";
 import Cross from "../assets/cross.png";
 
+export const WAITINGLIST_FORM = "https://forms.zohopublic.com/zeromagic/form/JoinZeromagicWaitlist/formperma/pHzlI6Y3c7WGeevzUK95oriLUJbQeY2BCGOtaZO57cY"
+
 export const Content2 = () => {
   return (
     <div class="py-[8vmin] bg-base relative px-4 sm:px-6 overflow-hidden">
@@ -57,7 +59,7 @@ export const Content2 = () => {
           </p>
           <a
             class="plausible-event-name=Signup-CTA-clicked mt-10 text-xl text-black font-medium tracking-tight py-4 px-6 rounded-lg bg-yellow plausible-event-trial_onboarding_test=variant"
-            href="#"
+            href={WAITINGLIST_FORM}
           >
             Get started now — free
           </a>

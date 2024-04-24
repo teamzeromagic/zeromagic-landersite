@@ -1,3 +1,5 @@
+import { WAITINGLIST_FORM } from "./content2";
+
 const TextBlock = () => {
   return (
     <div class="relative bg-white pb-[8vmin] pt-[10vmin] px-4 sm:px-6">
@@ -13,7 +15,7 @@ const TextBlock = () => {
         </p>
         <a
           class="text-darkblue font-bold text-xl lg:text-4xl inline-block mt-[4vmin] tracking-tight"
-          href="#"
+          href={WAITINGLIST_FORM}
         >
           Try Zeromagic completely free →
         </a>

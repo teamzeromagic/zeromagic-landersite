@@ -3,6 +3,7 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Logo from "../assets/logo.svg"
 import LogoFull from "../assets/logo-full.svg"
+import { WAITINGLIST_FORM } from './content2'
 
 const navigation = [
   { name: 'Product', href: '#' },
@@ -79,9 +80,9 @@ export default function Navbar() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end items-center space-x-4">
-  <a href="#" className="whitespace-nowrap text-md text-gray-500 font-medium hover:text-gray-900">Sign in</a>
+  {/* <a href={WAITINGLIST_FORM} className="whitespace-nowrap text-md text-gray-500 font-medium hover:text-gray-900">Join list</a> */}
 
-  <a href="#" className="whitespace-nowrap px-4 py-2 border border-transparent rounded-md shadow-sm text-sm text-white bg-base">
+  <a href={WAITINGLIST_FORM} className="whitespace-nowrap px-4 py-2 border border-transparent rounded-md shadow-sm text-sm text-white bg-base">
     <strong className="font-bold">Get Started</strong>
   </a> 
 </div>
