@@ -1,5 +1,5 @@
 import Content from "../components/content";
-import { Content2, Content3, Content4, Content5, Comparison, Steps } from "../components/content2";
+import { Modules, Auth,  Innovation, Comparison, Steps, GraphQL } from "../components/content2";
 import Feature from "../components/feature"; 
 import { Header } from "../components/header";
 import Help from "../components/help";
@@ -16,11 +16,12 @@ const HomePage = () => {
        <TextBlock /> 
        <Steps />
        <Comparison />
-       <Content3 /> 
-       <Content5 /> 
+       <Auth /> 
+       <Innovation /> 
+       <GraphQL />
        <Partner />
        <Help />
-       <Content2 /> 
+       <Modules /> 
         </>
     );
 }

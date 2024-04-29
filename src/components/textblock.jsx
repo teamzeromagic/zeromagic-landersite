@@ -2,7 +2,7 @@ import { WAITINGLIST_FORM } from "./content2";
 
 const TextBlock = () => {
   return (
-    <div class="relative bg-white pb-[8vmin] pt-[10vmin] px-4 sm:px-6">
+    <div id="product"   class="relative bg-white pb-[8vmin] pt-[10vmin] px-4 sm:px-6">
       <div class="max-w-8xl mx-auto">
         <p
           class="max-w-8xl text-2xl md:text-5xl font-bold text-black tracking-tight"

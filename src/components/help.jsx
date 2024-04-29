@@ -1,7 +1,7 @@
 import Docs from "../assets/docs.png"
 const Help = () => {
   return (
-    <div class="relative bg-slate-200 pt-[8vmin] pb-[10vmin] px-4 sm:px-6 overflow-hidden">
+    <div id="help" class="relative bg-slate-200 pt-[8vmin] pb-[10vmin] px-4 sm:px-6 overflow-hidden">
       <div class="max-w-8xl mx-auto">
         <div class="grid gap-[4vmin] grid-cols-12 items-center">
           <div class="col-span-12">

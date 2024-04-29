@@ -7,10 +7,12 @@ import Deploy from "../assets/deploy.jpg";
 import Scalability from "../assets/scale.png";
 import Check from "../assets/check-mark.png";
 import Cross from "../assets/cross.png";
+import Graphql from "../assets/graphql.png";
 
-export const WAITINGLIST_FORM = "https://forms.zohopublic.com/zeromagic/form/JoinZeromagicWaitlist/formperma/pHzlI6Y3c7WGeevzUK95oriLUJbQeY2BCGOtaZO57cY"
+export const WAITINGLIST_FORM =
+  "https://forms.zohopublic.com/zeromagic/form/JoinZeromagicWaitlist/formperma/pHzlI6Y3c7WGeevzUK95oriLUJbQeY2BCGOtaZO57cY";
 
-export const Content2 = () => {
+export const Modules = () => {
   return (
     <div class="py-[8vmin] bg-base relative px-4 sm:px-6 overflow-hidden">
       <div class="max-w-8xl mx-auto text-gray-400">
@@ -42,7 +44,7 @@ export const Content2 = () => {
           loading="lazy"
         />
       </div>
-      
+
       <div class="py-[8vmin] mt-10 text-center bg-base text-gray-400 font-semibold">
         <div class="max-w-8xl mx-auto flex flex-col items-center gap-6">
           <h2 class="text-xs font-semibold text-yellow uppercase tracking-widest">
@@ -109,9 +111,9 @@ export const Content2 = () => {
   );
 };
 
-export const Content3 = () => {
+export const Auth = () => {
   return (
-    <div class="relative bg-slate-900 px-4 sm:px-6 overflow-hidden">
+    <div  id="authentication" class="relative bg-slate-900 px-4 sm:px-6 overflow-hidden">
       <div class="max-w-8xl mx-auto">
         <div class="grid gap-[8vmin] grid-cols-12 items-center">
           <div class="col-span-12 lg:col-span-5 mt-12">
@@ -143,11 +145,7 @@ export const Content3 = () => {
           <div class="col-span-7">
             <div class="w-screen h-auto mt-12">
               <div class="max-w-7xl rounded-3xl overflow-hidden bg-white">
-                <img
-                  src={Authentication}
-                  alt="Authentication"
-                  loading="lazy"
-                />
+                <img src={Authentication} alt="Authentication" loading="lazy" />
 
                 {/* <video class="video w-full" src="/videos/themes.mp4" poster="/images/home/themes.webp" preload="none" muted="" loop=""></video> */}
               </div>
@@ -254,7 +252,7 @@ export const Content4 = () => {
   );
 };
 
-export const Content5 = () => {
+export const Innovation = () => {
   return (
     <div class="relative bg-slate-900 py-[8vmin] px-4 sm:px-6 overflow-hidden">
       <div class="max-w-8xl mx-auto">
@@ -313,6 +311,52 @@ export const Content5 = () => {
   );
 };
 
+export const GraphQL = () => {
+  return (
+    <div class="relative bg-slate-900 px-4 sm:px-6 overflow-hidden">
+      <div class="max-w-8xl mx-auto">
+        <div class="grid gap-[8vmin] grid-cols-12 items-center">
+          <div class="col-span-12 lg:col-span-5 mt-12">
+            <h2 class="text-xs text-green uppercase font-bold tracking-widest flex justify-between items-center">
+              <span class="flex-shrink-0">Fetch Data with Precision</span>
+            </h2>
+            <p class="mt-6 text-2xl lg:text-5xl font-bold text-white tracking-tight">
+              Ask only the data you need, skip the rest.
+            </p>
+
+            <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
+              GraphQL lets you precisely request the specific data you need.
+            </p>
+            <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
+              No more unnecessary data transfer. Receive only the data you
+              desire for a faster, more efficient experience
+            </p>
+            <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
+              Graphql makes your apps faster, easier to manage, and ultimately,
+              more efficient to use.{" "}
+            </p>
+            <a
+              class="inline-block mt-6 text-xl lg:text-2xl text-green font-semibold tracking-tight hover:underline"
+              href="#"
+            >
+              Explore GraphQL →
+            </a>
+          </div>
+          <div class="col-span-7">
+            <div class="w-screen h-auto mt-12">
+              <div class="max-w-7xl rounded-3xl overflow-hidden bg-white">
+                <img src={Graphql} alt="Graphql" loading="lazy" />
+
+                {/* <video class="video w-full" src="/videos/themes.mp4" poster="/images/home/themes.webp" preload="none" muted="" loop=""></video> */}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 export const Comparison = () => {
   return (
     <div class="relative bg-white py-[8vmin]  overflow-hidden">
@@ -324,9 +368,9 @@ export const Comparison = () => {
         <div class="grid gap-[4vmin] grid-cols-12 items-center">
           <div class="col-span-12">
             <p class="mt-12 text-2xl lg:text-5xl font-bold text-black tracking-tight leading-none">
-            Why  <span className="text-green">ZeroMagic?</span> No code, just magic!
+              Why <span className="text-green">ZeroMagic?</span> No code, just
+              magic!
             </p>
-            
           </div>
         </div>
       </div>
@@ -506,10 +550,10 @@ export const Steps = () => {
         <div class="grid gap-[4vmin] grid-cols-12 items-center">
           <div class="col-span-12">
             <p class="mt-12 text-2xl lg:text-5xl font-bold text-black tracking-tight leading-none">
-            From Concept to API in Minutes
+              From Concept to API in Minutes
             </p>
             <p class="max-w-3xl mt-6 text-xl lg:text-2xl md:text-4xl leading-normal font-normal text-slate-700 tracking-tight">
-            Develop like a ninja, deploy like a rocket
+              Develop like a ninja, deploy like a rocket
             </p>
           </div>
         </div>
@@ -525,11 +569,12 @@ export const Steps = () => {
               className="rounded-lg object-cover w-full h-80"
               loading="lazy"
             />
-            <h3 class="mt-10 text-2xl lg:text-3xl font-bold text-black tracking-tight leading-none">              
+            <h3 class="mt-10 text-2xl lg:text-3xl font-bold text-black tracking-tight leading-none">
               Create
             </h3>
             <p class="max-w-xl mt-6 text-xl leading-normal font-normal text-slate-700 tracking-tight">
-            Establish REST endpoints, define authentication with built-in functionality, and validate your data.
+              Establish REST endpoints, define authentication with built-in
+              functionality, and validate your data.
             </p>
           </div>
           <div class="col-span-3">
@@ -542,8 +587,9 @@ export const Steps = () => {
             <h3 class="mt-10 text-2xl lg:text-3xl font-bold text-black tracking-tight leading-none">
               Build
             </h3>
-            <p class="max-w-xl mt-6 text-xl leading-normal font-normal text-slate-700 tracking-tight"> 
-                 Combine APIs, third-party tools, database queries seamlessly, enabling smooth data flow and interaction.
+            <p class="max-w-xl mt-6 text-xl leading-normal font-normal text-slate-700 tracking-tight">
+              Combine APIs, third-party tools, database queries seamlessly,
+              enabling smooth data flow and interaction.
             </p>
           </div>
 
@@ -558,9 +604,10 @@ export const Steps = () => {
               Deploy
             </h3>
             <p class="max-w-xl mt-6 text-xl leading-normal font-normal text-slate-700 tracking-tight">
-            Go live in seconds with a single click, eliminating the need for devops tasks. Our platform handles hosting for you.
+              Go live in seconds with a single click, eliminating the need for
+              devops tasks. Our platform handles hosting for you.
             </p>
-          </div> 
+          </div>
 
           <div class="col-span-3">
             <img
@@ -570,13 +617,13 @@ export const Steps = () => {
               loading="lazy"
             />
             <h3 class="mt-10 text-2xl lg:text-3xl font-bold text-black tracking-tight leading-none">
-            Scale
+              Scale
             </h3>
             <p class="max-w-xl mt-6 text-xl leading-normal font-normal text-slate-700 tracking-tight">
-            Build applications that can effortlessly scale to accommodate growing user bases and increased demand
-             </p>
-          </div> 
-
+              Build applications that can effortlessly scale to accommodate
+              growing user bases and increased demand
+            </p>
+          </div>
         </div>
       </div>
     </div>

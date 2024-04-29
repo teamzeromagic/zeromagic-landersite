@@ -31,6 +31,7 @@ export const Header = () => {
           words={[
             ' backends',
             ' APIs', 
+            ' GraphQL', 
             ' features', 
           ]}    
       />

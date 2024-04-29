@@ -54,8 +54,10 @@ export default function Footer() {
       link: "mailto:ndrohith@zeromagic.in",
     },
   ];
+  const currentYear = new Date().getFullYear();
+
   return (
-    <div className="relative isolate overflow-hidden bg-base pt-16 sm:pt-20">
+    <div id="footer" className="relative isolate overflow-hidden bg-base pt-16 sm:pt-20">
       <div className="mx-auto max-w-8xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
           <div className="max-w-md lg:max-w-sm">
@@ -106,7 +108,7 @@ export default function Footer() {
         </div>
       </div>
       <p className="flex h-10 mt-10 items-center justify-center mt-12 mb-5  leading-tight text-md font-medium text-slate-200 sm:px-6 lg:px-8">
-       Zeromagic Labs Pvt. Ltd. © 2024
+       Zeromagic Labs Pvt. Ltd. © {currentYear}
       </p>
     </div>
   );

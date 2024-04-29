@@ -6,10 +6,10 @@ import LogoFull from "../assets/logo-full.svg"
 import { WAITINGLIST_FORM } from './content2'
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Resource', href: '#' },
-  { name: 'Contact', href: '#' },
+  { name: 'Product', href: '#product' },
+  { name: 'Features', href: '#authentication' },
+  { name: 'Resource', href: '#help' },
+  { name: 'Contact', href: '#footer' },
 ]
 
 export default function Navbar() {
