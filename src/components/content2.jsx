@@ -302,7 +302,7 @@ export const Innovation = () => {
               class="inline-block mt-6 text-xl lg:text-2xl text-yellow font-semibold tracking-tight hover:underline"
               href="#"
             >
-              Explore Restful →
+              Explore Restful API→
             </a>
           </div>
         </div>
