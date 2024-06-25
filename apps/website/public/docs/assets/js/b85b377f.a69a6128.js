@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocumentation=self.webpackChunkdocumentation||[]).push([[9877],{2836:s=>{s.exports=JSON.parse('{"label":"azure-cosmosdb","permalink":"/docs/blog/tags/azure-cosmosdb","allTagsPath":"/docs/blog/tags","count":1,"unlisted":false}')}}]);

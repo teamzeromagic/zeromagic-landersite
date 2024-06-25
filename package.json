@@ -1,0 +1,24 @@
+{
+    "name": "magicsite",
+    "version": "1.0.0",
+    "description": "Build scalable backends at lightning speed!",
+    "private": true,
+    "type": "module",
+    "workspaces": [
+        "apps/*"
+    ],
+    "scripts": {
+        "website": "npm run --workspace=website",
+        "docs": "npm run --workspace=docs",
+        "dev": "serve -s build -l 4000",
+        "server":"node index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.19.2",
+        "fs-extra": "^11.2.0",
+        "path": "^0.12.7"
+    }
+}

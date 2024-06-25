@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocumentation=self.webpackChunkdocumentation||[]).push([[6300],{7765:a=>{a.exports=JSON.parse('{"label":"zeromagic-query-language","permalink":"/docs/blog/tags/zeromagic-query-language","allTagsPath":"/docs/blog/tags","count":1,"unlisted":false}')}}]);
