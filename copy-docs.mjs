@@ -1,7 +1,7 @@
   import path from "path";
   import fs from "fs-extra";
 
-  const __dirname = process.cwd(); // Get current working directory
+  const __dirname = process.cwd(); 
 
   const docusaurusBuild = path.join(
     __dirname,
@@ -18,14 +18,13 @@
     "docs"
   );
 
-
-  // Check if the docs folder exists, and create it if not
+ 
     try {
-      fs.accessSync(websitePublic, fs.constants.F_OK); // Check if the folder exists
+      fs.accessSync(websitePublic, fs.constants.F_OK); 
     } catch (err) {
       console.log("err",err);
-      if (err.code === 'ENOENT') { // If the folder doesn't exist
-        fs.mkdirSync(websitePublic, { recursive: true }); // Create the folder structure recursively
+      if (err.code === 'ENOENT') {  
+        fs.mkdirSync(websitePublic, { recursive: true });  
       } 
     }
 

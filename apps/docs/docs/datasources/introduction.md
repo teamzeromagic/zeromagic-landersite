@@ -4,6 +4,7 @@ title: 'Introduction'
 description: Connect with multiple Databases! 
 sidebar_label: Introduction  
 tags: [database, datasource] 
+hide_table_of_contents: true
 ---
 
 import Cosmos from '@site/static/img/azure-cosmos-db.png';

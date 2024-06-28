@@ -1,25 +1,39 @@
 import { CalendarDaysIcon, HandRaisedIcon } from "@heroicons/react/24/outline";
 import Logo from "../assets/logo-full-light.svg";
 export default function Footer() {
-  const product = [
+  
+  const learn = [
     {
       id: 1,
-      title: "Overview",
+      title: "Documentation",
       link: "#",
     },
     {
       id: 2,
-      title: "Features",
+      title: "Blogs",
+      link: "#",
+    },
+  ];
+
+  const product = [
+    {
+      id: 1,
+      title: "Rest API",
+      link: "#",
+    },
+    {
+      id: 2,
+      title: "GraphQL",
       link: "#",
     },
     {
       id: 3,
-      title: "Resources",
+      title: "Authentication",
       link: "#",
     },
     {
       id: 4,
-      title: "Contact",
+      title: "Integrations",
       link: "#",
     },
   ];
@@ -83,6 +97,16 @@ export default function Footer() {
               ))}
             </ul>
             <ul className="flex items-start text-white flex-col">
+              <li className="text-md text-white font-bold mb-1">Learn</li>
+              {learn.map((item) => (
+                <li>
+                  <a className="block py-2 text-slate-300 leading-tight hover:text-white" href={item.link}>
+                    {item.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            {/* <ul className="flex items-start text-white flex-col">
               <li className="text-md text-white font-bold mb-1">Policies</li>
               {policies.map((item) => (
                 <li>
@@ -91,7 +115,7 @@ export default function Footer() {
                   </a>
                 </li>
               ))}
-            </ul>
+            </ul> */}
             <ul className="flex items-start text-white flex-col">
               <li className="text-md text-white font-bold mb-1">
                 Connect with us

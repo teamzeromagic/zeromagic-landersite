@@ -2,6 +2,7 @@
 sidebar_position: 2
 title: 'Quick Start'
 description: Learn to create Restful API! 
+hide_table_of_contents: true
 sidebar_label: Quick Start
 ---
 

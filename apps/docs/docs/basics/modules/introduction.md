@@ -3,6 +3,7 @@ sidebar_position: 1
 title: 'Modules'
 description: Modules Introduction! 
 sidebar_label: Introduction
+hide_table_of_contents: true
 ---
 import Restapi from '@site/static/img/restapi.png';
 import Graphql from '@site/static/img/graphql.png';
@@ -18,13 +19,13 @@ Within your newly created module, you can define specific API routes **(RESTful 
 
 
 <div class="card-container">
-  <a class="card" href="quickstart">
+  <a class="card" href="/docs/restapi/overview/">
     <img src={Restapi} alt="Restful"  />
     <small>Restful</small> 
   </a>
-
-  <div class="card">
+ 
+  <a class="card" href="/docs/graphql/overview/">
     <img src={Graphql} alt="GraphQL"  />
      <small>GraphQL</small> 
-  </div>
+  </a> 
 </div>

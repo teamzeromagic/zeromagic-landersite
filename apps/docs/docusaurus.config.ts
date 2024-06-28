@@ -1,6 +1,7 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic"; 
+const path = require('path');
 
 const config: Config = {
   title: "Zeromagic",
@@ -34,20 +35,25 @@ const config: Config = {
   presets: [
     [
       "classic",
+      /** @type {import('@docusaurus/preset-classic').Options} */
       {
         docs: {
-          sidebarPath: "./sidebars.ts",
+          // sidebarPath: "./sidebars.ts",
+          sidebarPath: require.resolve('./sidebars.ts'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           routeBasePath : "/",
+          exclude: ['**/*.wip'],
+          breadcrumbs: true,
+          docItemComponent: require.resolve('./src/components/CustomDocItem/index.tsx'),
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         blog: {
           showReadingTime: true,
           blogSidebarTitle: 'All posts',
-          blogSidebarCount: 5,
-
+          blogSidebarCount: 5, 
+          
           blogTitle: 'Zeromagic blog!',
           blogDescription: 'A Docusaurus powered blog!',
           postsPerPage: 10,
@@ -96,7 +102,7 @@ const config: Config = {
       logo: {
         alt: 'Magic Logo',
         src: '/img/logo-full.svg',
-        srcDark: '/img/logo-full.svg',
+        srcDark: '/img/logo_light.svg',
         href: 'https://zeromagic.in',
       },
       items: [
@@ -111,23 +117,8 @@ const config: Config = {
           to: "/blog",
           label: 'Blog',
           position: 'left',
-        },
- 
-        // {
-        //   type: 'docsVersionDropdown',
-        //   position: 'right',
-        //   dropdownActiveClassDisabled: true,
-        //   dropdownItemsAfter: [
-        //     {
-        //       href: 'https://hasura.io/docs/3.0/index/',
-        //       label: 'v3.x',
-        //     },
-        //     {docs/
-        //       href: 'https://hasura.io/docs/1.0/graphql/core/index.html',
-        //       label: 'v1.x',
-        //     },
-        //   ],
-        // },
+        }, 
+
         {
           type: 'search',
           position: 'right',

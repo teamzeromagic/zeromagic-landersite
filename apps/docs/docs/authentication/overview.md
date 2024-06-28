@@ -3,6 +3,7 @@ sidebar_position: 1
 title: 'Authentication & User Identity'
 description: User Creation and Management! 
 sidebar_label: Overview 
+hide_table_of_contents: true
 ---
 
 import Cosmos from '@site/static/img/azure-cosmos-db.png';

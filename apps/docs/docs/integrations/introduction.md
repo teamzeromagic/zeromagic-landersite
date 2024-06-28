@@ -3,6 +3,7 @@ sidebar_position: 1
 title: 'Introduction'
 description: Connect with multiple Databases! 
 sidebar_label: Introduction 
+hide_table_of_contents: true
 ---
 
 import Twilio from '@site/static/img/twilio.png';

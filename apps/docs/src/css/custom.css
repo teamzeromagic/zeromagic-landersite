@@ -93,13 +93,6 @@ h6 {
   gap: 10px; /* Add some spacing between cards */
 }
 
-.card {
-  border-radius: 4px;
-  padding: 10px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-}
 
 .card img {
   width: 150px;
@@ -114,4 +107,53 @@ h6 {
 /*  card text truncate */
 /* .text--truncate {
   white-space:  normal;
+} */
+
+
+/* Card gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+ 
+.card {
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+/* .card {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px white;
+  border-radius: 8px; 
+  padding: 20px;
+}
+.card h4 {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin: 0;
+  }
+
+  .card  a {
+    margin-left: auto;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .card a:hover {
+    .arrow {
+      transform: translateX(5px);
+    }
+  }
+
+.card-header {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 1rem;
 } */

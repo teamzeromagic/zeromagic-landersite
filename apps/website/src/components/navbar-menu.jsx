@@ -12,6 +12,7 @@ import {
   XMarkIcon,
   CodeBracketIcon,
   CloudIcon,
+  LockClosedIcon,
 } from "@heroicons/react/24/outline";
 import {
   ChevronDownIcon,
@@ -30,28 +31,28 @@ const products = [
   // },
   {
     name: "Documentation",
-    description: "Speak directly to your customers",
+    description: "Get started with our docs",
     href: "/docs/getting-started/overview/",
     icon: DocumentTextIcon,
   },
   {
     name: "Rest API",
-    description: "Connect with third-party tools",
-    href: "/docs/restapi/overview//",
+    description: "Explore our REST API",
+    href: "/docs/restapi/overview/",
     icon: CodeBracketIcon,
   },
   {
     name: "GraphQL",
-    description: "Connect with third-party tools",
+    description: "Discover GraphQL features",
     href: "/docs/graphql/overview/",
     icon: CloudIcon,
   },
 
   {
     name: "Authentication",
-    description: "Connect with third-party tools",
+    description: "Secure your application with Auth",
     href: "/docs/authentication/overview/",
-    icon: CloudIcon,
+    icon: LockClosedIcon,
   },
   {
     name: "Integrations",

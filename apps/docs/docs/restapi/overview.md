@@ -3,6 +3,7 @@ sidebar_position: 1
 title: 'Overview'
 description: Learn to about Restful API! 
 sidebar_label: Overview
+hide_table_of_contents: true
 ---
 
 # Overview

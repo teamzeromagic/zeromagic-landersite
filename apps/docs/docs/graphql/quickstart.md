@@ -3,6 +3,7 @@ sidebar_position: 2
 title: 'Quick Start'
 description: Learn to create GraphQL API! 
 sidebar_label: Quick Start
+hide_table_of_contents: true
 ---
 
 # Quick Start with GraphQL API

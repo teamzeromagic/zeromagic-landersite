@@ -4,7 +4,7 @@ import HomePage from './pages/homepage';
 import Contact from './pages/contact';
 import Navbar from './components/navbar';
 import Footer from './components/footer';  
-import NavbarExample from './components/navbar1';
+import NavbarExample from './components/navbar-menu';
 
 function App() {
  

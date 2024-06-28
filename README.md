@@ -30,3 +30,6 @@ firebase login
 firebase emulators:start
 firebase deploy # needs paid plan
 ```
+
+
+
