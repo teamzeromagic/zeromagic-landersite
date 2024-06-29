@@ -3,8 +3,8 @@
   }
   
 .zeromagic-wrapper {
-    background-image: url("@site/static/img/hasura-free.png");
-    background-color: #eaf0f6;
+    background-image: url("@site/static/img/zm-free.png");
+    background-color: #f2f7fd;
     color: var(--color-gray-90);
     box-shadow: var(--ifm-global-shadow-lw);
     background-size: contain;
@@ -18,11 +18,9 @@
     margin: 40px 0;
 }
 
-/* .zeromagic-wrapper:hover {
-  box-shadow: var(--ifm-global-shadow-tl);
-} */
- 
-
+.zeromagic-wrapper:hover {
+  box-shadow: 0 5px 8px rgba(112, 112, 112, 0.2)
+}
   
 .zeromagic-wrapper .p40 {
   padding: 38px 50px;
