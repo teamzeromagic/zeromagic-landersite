@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from '@docusaurus/Link'; 
-import Star from "@site/static/img/star.svg";
-import hasuraFree from "@site/static/img/hasura-free.png";
+import Star from "@site/static/img/circle.svg";
+import zmFree from "@site/static/img/zm-free.png";
 import styles from './styles.module.css';
 
 const ZeromagicWithBanner = () => {
@@ -10,28 +10,25 @@ const ZeromagicWithBanner = () => {
       <div className={styles["zeromagic-wrapper"]}>
         <div className={styles["p40"]}>
           <h3>
-            Start with GraphQL on Hasura for Free
+          Start building with Zeromagic for free
           </h3>
           <ul className={styles["desc"]}>
             <li>
               <Star />
-              Build apps and APIs 10x faster
+              Build REST & GraphQL APIs 10x faster
             </li>
             <li>
               <Star />
-              Built-in authorization and caching
+              Built-in Authentication for User Management
             </li>
             <li>
               <Star />
-              8x more performant than hand-rolled APIs
+              Scale 5x faster as application grows
             </li>
-          </ul>
-          <div className={styles["try-zeromagic"]}>
-            Try GraphQL with Hasura 
-          </div>
+          </ul> 
         </div>
         <div className={styles["show-mobile"]}>
-          <img src={hasuraFree} alt="Promo" />
+          <img src={zmFree} alt="Promo" />
         </div>
       </div>
     </Link>
