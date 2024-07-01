@@ -33,7 +33,8 @@ const config: Config = {
  
   presets: [
     [
-      "classic",
+      // "classic",
+      '@docusaurus/preset-classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       {
         docs: {
@@ -74,6 +75,10 @@ const config: Config = {
               },
             },
         },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.8,
+        },
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -91,6 +96,38 @@ const config: Config = {
       }),
     ],
   ],
+
+  // // Global meta tags for SEO
+  // headTags: [
+  //   {
+  //     tagName: 'meta',
+  //     attributes: {
+  //       name: 'robots',
+  //       content: 'index, follow',
+  //     },
+  //   },
+  //   {
+  //     tagName: 'meta',
+  //     attributes: {
+  //       property: 'og:title',
+  //       content: 'Your Site Title',
+  //     },
+  //   },
+  //   {
+  //     tagName: 'meta',
+  //     attributes: {
+  //       property: 'og:description',
+  //       content: 'Your site description here',
+  //     },
+  //   },
+  //   {
+  //     tagName: 'meta',
+  //     attributes: {
+  //       property: 'og:url',
+  //       content: 'https://your-site.com',
+  //     },
+  //   },
+  // ],
 
   themeConfig: {
     // Replace with your project's social card
@@ -163,6 +200,7 @@ const config: Config = {
     },
    
   } satisfies Preset.ThemeConfig,
+
 };
 
 export default config;
