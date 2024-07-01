@@ -1,6 +1,10 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic"; 
+import type {Options as DocsOptions} from '@docusaurus/plugin-content-docs';
+import type {Options as BlogOptions} from '@docusaurus/plugin-content-blog';
+import type {Options as PageOptions} from '@docusaurus/plugin-content-pages'
+
 const path = require('path');
 
 const config: Config = {
@@ -13,6 +17,7 @@ const config: Config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/docs/",
+  baseUrlIssueBanner: true,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -37,28 +42,28 @@ const config: Config = {
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       {
-        docs: {
-          // sidebarPath: "./sidebars.ts",
-          sidebarPath: require.resolve('./sidebars.ts'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+        docs: { 
+          sidebarPath: require.resolve('./sidebars.ts'), 
           routeBasePath : "/",
-          exclude: ['**/*.wip'],
+          exclude: ['**/*.wip'], 
           breadcrumbs: true,
           docItemComponent: require.resolve('./src/components/CustomDocItem/index.tsx'),
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-        },
+          versions: {
+              current: {
+                label: `current`,
+              },
+            },
+          },
+  
         blog: {
           showReadingTime: true,
           blogSidebarTitle: 'All posts',
-          blogSidebarCount: 5, 
-          
+          blogSidebarCount: 5,   
           blogTitle: 'Zeromagic blog!',
           blogDescription: 'A Docusaurus powered blog!',
-          postsPerPage: 10,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+          postsPerPage: 10, 
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
 
@@ -74,15 +79,29 @@ const config: Config = {
                 });
               },
             },
-        },
+        } satisfies BlogOptions,
         theme: {
           customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
     ],
+ 
   ],
 
   plugins: [ 
+
+    // New Learn page with sidebarsLearn.ts config for sidebar
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'learn',
+        path: 'learn',
+        routeBasePath: 'learn',
+        sidebarPath: './sidebarsLearn.ts', 
+        docItemComponent: require.resolve('./src/components/CustomDocItem/index.tsx'),
+      },
+    ], 
+
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
@@ -91,6 +110,8 @@ const config: Config = {
         docsRouteBasePath : "/"         
       }),
     ],
+    
+ 
   ],
 
   themeConfig: {
@@ -106,6 +127,7 @@ const config: Config = {
         href: 'https://zeromagic.in',
       },
       items: [
+
       { 
           type: "docSidebar" ,
           sidebarId: "magicSidebar",
@@ -117,20 +139,20 @@ const config: Config = {
           to: "/blog",
           label: 'Blog',
           position: 'left',
-        }, 
-
-        { 
-          to: "/blog/tags/tutorial/",
-          label: 'Tutorials',
-          position: 'left',
-        }, 
+        },  
 
         {
-          type: 'search',
+          to: '/learn/support',
+          label: 'Learn',
+          position: 'left',  
+        },
+
+        {
+          type: 'search', 
           position: 'right',
         },
         // {
-        //   href: 'https://github.com/hasura/graphql-engine',
+        //   href: 'https://github.com/facebook/docusaurus',
         //   position: 'right',
         //   className: 'header-github-link',
         //   'aria-label': 'GitHub repository',
