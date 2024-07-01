@@ -7,7 +7,6 @@ const config: Config = {
   title: "Zeromagic",
   tagline: "Build scalable backends at lightning speed!",
   favicon: "img/logo.svg",
-
   // Set the production url of your site here
   url: "https://your-docusaurus-site.example.com",
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -98,7 +97,7 @@ const config: Config = {
     // image: "img/docusaurus-social-card.jpg",
     navbar: {
       hideOnScroll: false,
-      title: '',
+      title: 'your site title',
       logo: {
         alt: 'Magic Logo',
         src: '/img/logo-full.svg',

@@ -6,6 +6,8 @@ npm run website start
 ```
 
 ### 2. To working with Documentation
+Clean contents in `.docusaurus` folder and use `npm install`
+
 ```
 npm run docs start
 ```
