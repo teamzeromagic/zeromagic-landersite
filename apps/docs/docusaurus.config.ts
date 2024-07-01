@@ -118,6 +118,12 @@ const config: Config = {
           position: 'left',
         }, 
 
+        { 
+          to: "/blog/tags/tutorial/",
+          label: 'Tutorials',
+          position: 'left',
+        }, 
+
         {
           type: 'search',
           position: 'right',
