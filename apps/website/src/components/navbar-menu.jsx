@@ -1,13 +1,8 @@
 import { useState } from "react";
 import { Dialog, Disclosure, Popover } from "@headlessui/react";
-import {
-  ArrowPathIcon,
-  AcademicCapIcon,
+import { 
   Bars3Icon,
-  ChartPieIcon,
-  DocumentTextIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
+  SparklesIcon,
   SquaresPlusIcon,
   XMarkIcon,
   CodeBracketIcon,
@@ -17,7 +12,7 @@ import {
 import {
   ChevronDownIcon,
   PhoneIcon,
-  PlayCircleIcon,
+  PlayCircleIcon, 
 } from "@heroicons/react/20/solid";
 import Logo from "../assets/logo.svg";
 import { WAITINGLIST_FORM } from "./content2";
@@ -29,12 +24,12 @@ const products = [
   //   href: "/docs/blog/",
   //   icon: AcademicCapIcon,
   // },
-  {
-    name: "Documentation",
-    description: "Get started with our docs",
-    href: "/docs/getting-started/overview/",
-    icon: DocumentTextIcon,
-  },
+  // {
+  //   name: "Documentation",
+  //   description: "Get started with our docs",
+  //   href: "/docs/getting-started/overview/",
+  //   icon: DocumentTextIcon,
+  // },
   {
     name: "Rest API",
     description: "Explore our REST API",
@@ -60,6 +55,12 @@ const products = [
     href: "/docs/integrations/introduction/",
     icon: SquaresPlusIcon,
   },
+  {
+    name: "AI Assistant",
+    description: "Get started with our docs",
+    href: "/docs/getting-started/overview/",
+    icon: SparklesIcon,
+  }
 ];
 const callsToAction = [
   { name: "Watch demo", href: "#", icon: PlayCircleIcon },
@@ -168,6 +169,13 @@ export default function NavbarExample() {
             >
               Pricing
             </a>
+            
+            <a
+              href="/docs/blog/"
+              className="text-base font-semibold leading-6 text-gray-600 hover:text-gray-900"
+            >
+              Documentation
+            </a>
 
             <a
               href="/docs/blog/"
@@ -176,12 +184,12 @@ export default function NavbarExample() {
               Blogs
             </a>
 
-            <a
+            {/* <a
               href="#"
               className="text-base font-semibold leading-6 text-gray-600 hover:text-gray-900"
             >
               Community
-            </a>
+            </a> */}
 
             <a
               href="#"

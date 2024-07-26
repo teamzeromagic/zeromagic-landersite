@@ -1,5 +1,5 @@
 import Content from "../components/content";
-import { Modules, Auth,  Innovation, Comparison, Steps, GraphQL } from "../components/content2";
+import { Modules, Auth,  Innovation, Comparison, Steps, GraphQL, MagicAI } from "../components/content2";
 import Feature from "../components/feature"; 
 import { Header } from "../components/header";
 import Help from "../components/help";
@@ -19,6 +19,7 @@ const HomePage = () => {
        <Auth /> 
        <Innovation /> 
        <GraphQL />
+       <MagicAI /> 
        <Partner />
        <Help />
        <Modules /> 

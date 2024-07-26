@@ -1,6 +1,7 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic"; 
+import type * as OpenAPIPreset from "docusaurus-preset-openapi";
 import type {Options as DocsOptions} from '@docusaurus/plugin-content-docs';
 import type {Options as BlogOptions} from '@docusaurus/plugin-content-blog';
 import type {Options as PageOptions} from '@docusaurus/plugin-content-pages'
@@ -41,12 +42,22 @@ const config: Config = {
     [
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
-      {
+
+      // "docusaurus-preset-openapi",
+      // /** @type {import('docusaurus-preset-openapi').Options} */
+      ({
+        // api: {
+        //   path: "api/openapi-cos.json",
+        //   routeBasePath: "api",
+
+        // },
+
         docs: { 
           sidebarPath: require.resolve('./sidebars.ts'), 
           routeBasePath : "/",
           exclude: ['**/*.wip'], 
-          breadcrumbs: true,
+          breadcrumbs: true, 
+          // docItemComponent: "@theme/ApiItem",
           docItemComponent: require.resolve('./src/components/CustomDocItem/index.tsx'),
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
@@ -82,15 +93,21 @@ const config: Config = {
         } satisfies BlogOptions,
         theme: {
           customCss: "./src/css/custom.css",
-        },
-      } satisfies Preset.Options,
+        }, 
+    }) satisfies Preset.Options,
     ],
- 
   ],
 
   plugins: [ 
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      ({ 
+        hashed: true,
+        docsRouteBasePath : "/"         
+      }),
+    ],
 
-    // New Learn page with sidebarsLearn.ts config for sidebar
     [
       '@docusaurus/plugin-content-docs',
       {
@@ -102,17 +119,42 @@ const config: Config = {
       },
     ], 
 
-    [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
-      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
-      ({ 
-        hashed: true,
-        docsRouteBasePath : "/"         
-      }),
-    ],
-    
- 
+
+
+  
+    // [
+    //   'docusaurus-plugin-openapi',
+    //   {
+    //     id: 'trains', 
+    //     path: 'examples/petstore.yaml',
+    //     routeBasePath: '/trains', 
+    //   },
+    // ], 
+
+    // [
+    //   'docusaurus-plugin-openapi-docs',
+    //   {
+    //     id: "api", // plugin id
+    //     docsPluginId: "classic", // id of plugin-content-docs or preset for rendering docs
+    //     config: {
+    //       petstore: { // the <id> referenced when running CLI commands
+    //         specPath: "examples/petstore.yaml", // path to OpenAPI spec, URLs supported
+    //         outputDir: "api/petstore", // output directory for generated files
+    //         sidebarOptions: { // optional, instructs plugin to generate sidebar.js
+    //           groupPathsBy: "tag", // group sidebar items by operation "tag"
+    //         },
+    //       },
+    //       burgers: {
+    //         specPath: "examples/food/burgers/openapi.yaml",
+    //         outputDir: "api/food/burgers",
+    //       }
+    //     }
+    //   },
+    // ]
+     
   ],
+  // themes: ['@docusaurus/theme-classic'],
+  // themes: ["docusaurus-theme-openapi-docs"],
 
   themeConfig: {
     // Replace with your project's social card
@@ -146,6 +188,9 @@ const config: Config = {
           label: 'Learn',
           position: 'left',  
         },
+
+        // { to: "/api", label: "API References", position: "left" },
+
 
         {
           type: 'search', 

@@ -1,7 +1,8 @@
 import Authentication from "../assets/authentication.png";
-import ServiceModules from "../assets/service-modules.svg";
+import ServiceModules from "../assets/svc-graphql.png";
 import Gif from "../assets/prototype.gif";
 import Rapid from "../assets/rapid.jpg";
+import MagicVid from "../assets/graphql-magic.mp4";
 import Customization from "../assets/customization.png";
 import Deploy from "../assets/deploy.jpg";
 import Scalability from "../assets/scale.png";
@@ -367,7 +368,7 @@ export const Comparison = () => {
         </h2>
         <div class="grid gap-[4vmin] grid-cols-12 items-center">
           <div class="col-span-12">
-            <p class="mt-12 text-2xl lg:text-5xl font-bold text-black tracking-tight leading-none">
+            <p class="mt-10 text-2xl lg:text-4xl font-bold text-black tracking-tight leading-none">
               Why <span className="text-green">ZeroMagic?</span> No code, just
               magic!
             </p>
@@ -541,7 +542,7 @@ export const Comparison = () => {
 
 export const Steps = () => {
   return (
-    <div class="relative bg-white py-[8vmin] px-4 sm:px-6 overflow-hidden">
+    <div class="relative bg-white py-[6vmin] px-4 sm:px-6 overflow-hidden">
       <div class="max-w-8xl mx-auto">
         <h2 class="text-xs text-red uppercase font-bold tracking-widest flex justify-between items-center">
           <span class="flex-shrink-0">Business Made Easy</span>
@@ -549,10 +550,10 @@ export const Steps = () => {
         </h2>
         <div class="grid gap-[4vmin] grid-cols-12 items-center">
           <div class="col-span-12">
-            <p class="mt-12 text-2xl lg:text-5xl font-bold text-black tracking-tight leading-none">
+            <p class="mt-10 text-2xl lg:text-4xl font-bold text-black tracking-tight leading-none">
               From Concept to API in Minutes
             </p>
-            <p class="max-w-3xl mt-6 text-xl lg:text-2xl md:text-4xl leading-normal font-normal text-slate-700 tracking-tight">
+            <p class="max-w-3xl mt-6 text-xl lg:text-xl md:text-4xl leading-normal font-normal text-slate-700 tracking-tight">
               Develop like a ninja, deploy like a rocket
             </p>
           </div>
@@ -569,10 +570,10 @@ export const Steps = () => {
               className="rounded-lg object-cover w-full h-80"
               loading="lazy"
             />
-            <h3 class="mt-10 text-2xl lg:text-3xl font-bold text-black tracking-tight leading-none">
+            <h3 class="mt-10 text-2xl lg:text-2xl font-bold text-black tracking-tight leading-none">
               Create
             </h3>
-            <p class="max-w-xl mt-6 text-xl leading-normal font-normal text-slate-700 tracking-tight">
+            <p class="max-w-xl mt-6 text-lg leading-normal font-normal text-slate-700 tracking-tight">
               Establish REST endpoints, define authentication with built-in
               functionality, and validate your data.
             </p>
@@ -584,10 +585,10 @@ export const Steps = () => {
               className="rounded-lg object-cover w-full h-80"
               loading="lazy"
             />
-            <h3 class="mt-10 text-2xl lg:text-3xl font-bold text-black tracking-tight leading-none">
+            <h3 class="mt-10 text-2xl lg:text-2xl font-bold text-black tracking-tight leading-none">
               Build
             </h3>
-            <p class="max-w-xl mt-6 text-xl leading-normal font-normal text-slate-700 tracking-tight">
+            <p class="max-w-xl mt-6 text-lg leading-normal font-normal text-slate-700 tracking-tight">
               Combine APIs, third-party tools, database queries seamlessly,
               enabling smooth data flow and interaction.
             </p>
@@ -600,10 +601,10 @@ export const Steps = () => {
               className="rounded-lg object-cover w-full h-80"
               loading="lazy"
             />
-            <h3 class="mt-10 text-2xl lg:text-3xl font-bold text-black tracking-tight leading-none">
+            <h3 class="mt-10 text-2xl lg:text-2xl font-bold text-black tracking-tight leading-none">
               Deploy
             </h3>
-            <p class="max-w-xl mt-6 text-xl leading-normal font-normal text-slate-700 tracking-tight">
+            <p class="max-w-xl mt-6 text-lg leading-normal font-normal text-slate-700 tracking-tight">
               Go live in seconds with a single click, eliminating the need for
               devops tasks. Our platform handles hosting for you.
             </p>
@@ -616,13 +617,74 @@ export const Steps = () => {
               className="rounded-lg object-cover w-full h-80"
               loading="lazy"
             />
-            <h3 class="mt-10 text-2xl lg:text-3xl font-bold text-black tracking-tight leading-none">
+            <h3 class="mt-10 text-2xl lg:text-2xl font-bold text-black tracking-tight leading-none">
               Scale
             </h3>
-            <p class="max-w-xl mt-6 text-xl leading-normal font-normal text-slate-700 tracking-tight">
+            <p class="max-w-xl mt-6 text-lg leading-normal font-normal text-slate-700 tracking-tight">
               Build applications that can effortlessly scale to accommodate
               growing user bases and increased demand
             </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
+
+export const MagicAI = () => {
+  return (
+    <div class="relative bg-slate-900 py-[8vmin] px-4 sm:px-6 overflow-hidden">
+      <div class="max-w-8xl mx-auto">
+        <div class="grid gap-[4vmin] grid-cols-12 items-center">
+          <div class="flex justify-center col-span-12 md:col-span-7 h-auto md:h-[800px] relative">
+            <div class="relative h-full w-full overflow-hidden bg-white rounded-lg md:rounded-xl lg:rounded-2xl flex flex-col justify-center">
+              <video
+                autoPlay={true}
+                class="video w-full object-cover"
+                src={MagicVid}
+                preload="none"
+                // poster={Workflow}
+                muted={true}
+                loop={true}
+              ></video>
+
+              {/* <video
+                class="video w-full"
+                src="/videos/portal.mp4"
+                poster="/images/home/portal.webp"
+                preload="none"
+                muted=""
+                loop=""
+              ></video> */}
+            </div>
+          </div>
+          <div class="col-span-12 md:col-span-5 mt-12">
+            <h2 class="text-xs text-yellow uppercase font-bold tracking-widest flex justify-between items-center">
+              <span class="flex-shrink-0">Click Your Way to Innovation</span>
+            </h2>
+            <p class="mt-6 text-2xl lg:text-5xl font-bold text-white tracking-tight leading-tight">
+              Transform your clicks into features.
+            </p>
+            <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
+              Our platform enables anyone to build features with a click,
+              accelerating your time to market and delivering business value
+              faster.
+            </p>
+
+            <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
+              Business users can now contribute to building the functionalities
+              they need, promoting collaboration and innovation within your
+              organization.
+            </p>
+
+            <a
+              class="inline-block mt-6 text-xl lg:text-2xl text-yellow font-semibold tracking-tight hover:underline"
+              href="#"
+            >
+              Explore Restful API→
+            </a>
           </div>
         </div>
       </div>
