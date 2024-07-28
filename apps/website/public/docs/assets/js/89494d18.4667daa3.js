@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocumentation=self.webpackChunkdocumentation||[]).push([[272],{6305:o=>{o.exports=JSON.parse('{"permalink":"/docs/blog/tags/tutorial","page":1,"postsPerPage":10,"totalPages":1,"totalCount":8,"blogDescription":"A Docusaurus powered blog!","blogTitle":"Zeromagic blog!"}')}}]);

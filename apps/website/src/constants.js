@@ -1,0 +1,7 @@
+export const DOC_URL = "https://docs.zeromagic.in/"
+export const BLOG_URL = "https://docs.zeromagic.in/blog/introduction"
+export const REST_API = "https://docs.zeromagic.in/restapi/overview"
+export const GRAPHQL = "https://docs.zeromagic.in/graphql/overview"
+export const AUTHENTICATION = "https://docs.zeromagic.in/authentication/overview"
+export const INTEGRATIONS = "https://docs.zeromagic.in/integrations/introduction"
+export const MAGIC_AI = "https://docs.zeromagic.in/basics/basics/magic-ai"

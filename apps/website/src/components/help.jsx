@@ -1,4 +1,5 @@
 import Docs from "../assets/docs.png"
+import { DOC_URL } from "../constants";
 const Help = () => {
   return (
     <div id="help" class="relative bg-slate-200 pt-[8vmin] pb-[10vmin] px-4 sm:px-6 overflow-hidden">
@@ -30,7 +31,8 @@ const Help = () => {
               Dive into this comprehensive documentation for tutorials and resources to build applications efficiently. 
               </p>
               <a
-                href="#"
+                href={DOC_URL}
+                target="blank"
                 class="inline-block mt-7 whitespace-nowrap px-4 py-2 border rounded-md text-md font-semibold text-white border-white hover:text-black hover:bg-white transition-all"
               >
                 Check Docs →

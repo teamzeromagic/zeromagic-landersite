@@ -16,6 +16,7 @@ import {
 } from "@heroicons/react/20/solid";
 import Logo from "../assets/logo.svg";
 import { WAITINGLIST_FORM } from "./content2";
+import { AUTHENTICATION, BLOG_URL, DOC_URL, GRAPHQL, INTEGRATIONS, REST_API } from "../constants";
 
 const products = [
   // {
@@ -33,31 +34,31 @@ const products = [
   {
     name: "Rest API",
     description: "Explore our REST API",
-    href: "/docs/restapi/overview/",
+    href: REST_API,
     icon: CodeBracketIcon,
   },
   {
     name: "GraphQL",
     description: "Discover GraphQL features",
-    href: "/docs/graphql/overview/",
+    href: GRAPHQL,
     icon: CloudIcon,
   },
 
   {
     name: "Authentication",
     description: "Secure your application with Auth",
-    href: "/docs/authentication/overview/",
+    href: AUTHENTICATION,
     icon: LockClosedIcon,
   },
   {
     name: "Integrations",
     description: "Connect with third-party tools",
-    href: "/docs/integrations/introduction/",
+    href: INTEGRATIONS,
     icon: SquaresPlusIcon,
   },
   {
-    name: "AI Assistant",
-    description: "Get started with our docs",
+    name: "Magic AI",
+    description: "Explore features of Magic AI",
     href: "/docs/getting-started/overview/",
     icon: SparklesIcon,
   }
@@ -135,6 +136,7 @@ export default function NavbarExample() {
                       <div className="flex-auto">
                         <a
                           href={item.href}
+                          target="blank"
                           className="block font-semibold text-gray-900"
                         >
                           {item.name}
@@ -145,7 +147,7 @@ export default function NavbarExample() {
                     </div>
                   ))}
                 </div>
-                <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+                {/* <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
                   {callsToAction.map((item) => (
                     <a
                       key={item.name}
@@ -159,7 +161,7 @@ export default function NavbarExample() {
                       {item.name}
                     </a>
                   ))}
-                </div>
+                </div> */}
               </Popover.Panel>
             </Popover>
 
@@ -171,14 +173,16 @@ export default function NavbarExample() {
             </a>
             
             <a
-              href="/docs/blog/"
+              href={DOC_URL}
+              target="blank"
               className="text-base font-semibold leading-6 text-gray-600 hover:text-gray-900"
             >
               Documentation
             </a>
 
             <a
-              href="/docs/blog/"
+              target="blank"
+              href={BLOG_URL}
               className="text-base font-semibold leading-6 text-gray-600 hover:text-gray-900"
             >
               Blogs
@@ -200,6 +204,7 @@ export default function NavbarExample() {
           </Popover.Group>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a
+              target="blank"
               href={WAITINGLIST_FORM}
               className="whitespace-nowrap px-4 py-2 border border-transparent rounded-md shadow-sm text-sm text-white bg-base"
             >
@@ -217,12 +222,8 @@ export default function NavbarExample() {
           <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
-                <img
-                  className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                  alt=""
-                />
+                <span className="sr-only">zeromagic</span>
+              <img className="h-5 w-auto" src={Logo} alt="Logo" /> 
               </a>
               <button
                 type="button"
@@ -239,7 +240,7 @@ export default function NavbarExample() {
                   <Disclosure as="div" className="-mx-3">
                     {({ open }) => (
                       <>
-                        <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                        <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50">
                           Product
                           <ChevronDownIcon
                             className={classNames(
@@ -250,12 +251,12 @@ export default function NavbarExample() {
                           />
                         </Disclosure.Button>
                         <Disclosure.Panel className="mt-2 space-y-2">
-                          {[...products, ...callsToAction].map((item) => (
+                          {[...products].map((item) => (
                             <Disclosure.Button
                               key={item.name}
                               as="a"
                               href={item.href}
-                              className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                              className="block rounded-lg py-2 pl-6 pr-3 text-sm font-normal leading-7 text-gray-700 hover:bg-gray-50"
                             >
                               {item.name}
                             </Disclosure.Button>
@@ -266,30 +267,40 @@ export default function NavbarExample() {
                   </Disclosure>
                   <a
                     href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50"
                   >
-                    Features
+                    Pricing
                   </a>
+                  <a 
+                    href={DOC_URL}
+              target="blank"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50"
+                  >
+                    Documentation
+                  </a>
+                  <a 
+                  href={BLOG_URL}
+              target="blank"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50"
+                  >
+                    Blogs
+                  </a>
+
                   <a
                     href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-700 hover:bg-gray-50"
                   >
-                    Marketplace
-                  </a>
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    Company
+                    Contact
                   </a>
                 </div>
                 <div className="py-6">
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
-                    Log in
-                  </a>
+                <a
+              href={WAITINGLIST_FORM}
+              target="blank"
+              className="whitespace-nowrap px-4 py-2 border border-transparent rounded-md shadow-sm text-sm text-white bg-base"
+            >
+              <strong className="font-bold">Get Started</strong>
+            </a>
                 </div>
               </div>
             </div>

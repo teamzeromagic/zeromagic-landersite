@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocumentation=self.webpackChunkdocumentation||[]).push([[1763],{5962:o=>{o.exports=JSON.parse('{"label":"forloop","permalink":"/docs/blog/tags/forloop","allTagsPath":"/docs/blog/tags","count":2,"unlisted":false}')}}]);

@@ -17,10 +17,10 @@ function App() {
         <Route exact path="/" element={<HomePage />} />
         <Route path="/contact/" element={<Contact />} />  
 
-        <Route path="/docs" component={() => {
+        {/* <Route path="/docs" component={() => {
           window.location.href = '/docs/index.html';
           return null;
-        }} />
+        }} /> */}
      
      </Routes>
      </BrowserRouter>

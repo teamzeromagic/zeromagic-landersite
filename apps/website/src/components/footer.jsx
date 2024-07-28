@@ -1,40 +1,47 @@
 import { CalendarDaysIcon, HandRaisedIcon } from "@heroicons/react/24/outline";
 import Logo from "../assets/logo-full-light.svg";
+import { AUTHENTICATION, BLOG_URL, DOC_URL, GRAPHQL, INTEGRATIONS, MAGIC_AI, REST_API } from "../constants";
 export default function Footer() {
   
   const learn = [
     {
+      id: 0,
+      title: "Magic AI",
+      link: {MAGIC_AI},
+    },
+    {
       id: 1,
       title: "Documentation",
-      link: "#",
+      link: {DOC_URL},
     },
     {
       id: 2,
       title: "Blogs",
-      link: "#",
-    },
+      link: {BLOG_URL},
+    }
+
   ];
 
   const product = [
     {
       id: 1,
       title: "Rest API",
-      link: "#",
+      link: {REST_API},
     },
     {
       id: 2,
       title: "GraphQL",
-      link: "#",
+      link: {GRAPHQL},
     },
     {
       id: 3,
       title: "Authentication",
-      link: "#",
+      link: {AUTHENTICATION},
     },
     {
       id: 4,
       title: "Integrations",
-      link: "#",
+      link: {INTEGRATIONS},
     },
   ];
 

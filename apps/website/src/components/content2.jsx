@@ -9,6 +9,7 @@ import Scalability from "../assets/scale.png";
 import Check from "../assets/check-mark.png";
 import Cross from "../assets/cross.png";
 import Graphql from "../assets/graphql.png";
+import { AUTHENTICATION, GRAPHQL, MAGIC_AI, REST_API } from "../constants";
 
 export const WAITINGLIST_FORM =
   "https://forms.zohopublic.com/zeromagic/form/JoinZeromagicWaitlist/formperma/pHzlI6Y3c7WGeevzUK95oriLUJbQeY2BCGOtaZO57cY";
@@ -138,7 +139,7 @@ export const Auth = () => {
             </p>
             <a
               class="inline-block mt-6 text-xl lg:text-2xl text-green font-semibold tracking-tight hover:underline"
-              href="#"
+              href={AUTHENTICATION}
             >
               Explore Authentication →
             </a>
@@ -301,7 +302,7 @@ export const Innovation = () => {
 
             <a
               class="inline-block mt-6 text-xl lg:text-2xl text-yellow font-semibold tracking-tight hover:underline"
-              href="#"
+              href={REST_API}
             >
               Explore Restful API→
             </a>
@@ -338,7 +339,7 @@ export const GraphQL = () => {
             </p>
             <a
               class="inline-block mt-6 text-xl lg:text-2xl text-green font-semibold tracking-tight hover:underline"
-              href="#"
+              href={GRAPHQL}
             >
               Explore GraphQL →
             </a>
@@ -662,28 +663,28 @@ export const MagicAI = () => {
           </div>
           <div class="col-span-12 md:col-span-5 mt-12">
             <h2 class="text-xs text-yellow uppercase font-bold tracking-widest flex justify-between items-center">
-              <span class="flex-shrink-0">Click Your Way to Innovation</span>
+              <span class="flex-shrink-0">Automate API Tasks with Ease</span>
             </h2>
             <p class="mt-6 text-2xl lg:text-5xl font-bold text-white tracking-tight leading-tight">
-              Transform your clicks into features.
+              Magic AI - Where Code Meets Magic
             </p>
             <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
-              Our platform enables anyone to build features with a click,
-              accelerating your time to market and delivering business value
-              faster.
+            Accelerate API development with our AI-powered assistant, transforming complex tasks into effortless creations
             </p>
 
             <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
-              Business users can now contribute to building the functionalities
-              they need, promoting collaboration and innovation within your
-              organization.
+            From GraphQL to REST, let Magic AI handle the heavy lifting, freeing you to focus on innovation.
+            </p>
+
+            <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
+            Enhance your API development with intelligent documentation assistance
             </p>
 
             <a
               class="inline-block mt-6 text-xl lg:text-2xl text-yellow font-semibold tracking-tight hover:underline"
-              href="#"
+              href={MAGIC_AI}
             >
-              Explore Restful API→
+              Explore Magic AI→
             </a>
           </div>
         </div>
