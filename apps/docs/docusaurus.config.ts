@@ -12,7 +12,6 @@ const config: Config = {
   title: "Zeromagic",
   tagline: "Build scalable backends at lightning speed!",
   favicon: "img/logo.svg",
-
   // Set the production url of your site here
   url: "https://your-docusaurus-site.example.com",
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -40,7 +39,8 @@ const config: Config = {
  
   presets: [
     [
-      "classic",
+      // "classic",
+      '@docusaurus/preset-classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
 
       // "docusaurus-preset-openapi",
@@ -67,7 +67,10 @@ const config: Config = {
               },
             },
           },
-  
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.8,
+        },
         blog: {
           showReadingTime: true,
           blogSidebarTitle: 'All posts',
@@ -156,12 +159,44 @@ const config: Config = {
   // themes: ['@docusaurus/theme-classic'],
   // themes: ["docusaurus-theme-openapi-docs"],
 
+  // // Global meta tags for SEO
+  // headTags: [
+  //   {
+  //     tagName: 'meta',
+  //     attributes: {
+  //       name: 'robots',
+  //       content: 'index, follow',
+  //     },
+  //   },
+  //   {
+  //     tagName: 'meta',
+  //     attributes: {
+  //       property: 'og:title',
+  //       content: 'Your Site Title',
+  //     },
+  //   },
+  //   {
+  //     tagName: 'meta',
+  //     attributes: {
+  //       property: 'og:description',
+  //       content: 'Your site description here',
+  //     },
+  //   },
+  //   {
+  //     tagName: 'meta',
+  //     attributes: {
+  //       property: 'og:url',
+  //       content: 'https://your-site.com',
+  //     },
+  //   },
+  // ],
+
   themeConfig: {
     // Replace with your project's social card
     // image: "img/docusaurus-social-card.jpg",
     navbar: {
       hideOnScroll: false,
-      title: '',
+      title: 'your site title',
       logo: {
         alt: 'Magic Logo',
         src: '/img/logo-full.svg',
@@ -231,6 +266,7 @@ const config: Config = {
     },
    
   } satisfies Preset.ThemeConfig,
+
 };
 
 export default config;
