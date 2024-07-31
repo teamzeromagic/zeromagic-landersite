@@ -367,16 +367,19 @@ export const Comparison = () => {
           <span class="flex-shrink-0">Hassle-Free Development</span>
           <div class="w-full h-[2px] ml-5 bg-black opacity-10"></div>
         </h2>
+        
         <div class="grid gap-[4vmin] grid-cols-12 items-center">
           <div class="col-span-12">
             <p class="mt-10 text-2xl lg:text-4xl font-bold text-black tracking-tight leading-none">
               Why <span className="text-green">ZeroMagic?</span> No code, just
               magic!
             </p>
+            <p class="max-w-3xl mt-6 text-xl lg:text-xl md:text-4xl leading-normal font-normal text-slate-700 tracking-tight">
+            Transform code into reality with a wave of your wand!
+            </p>
           </div>
         </div>
       </div>
-      <br />
       <br />
 
       <div class="max-w-8xl mx-auto">
@@ -555,7 +558,7 @@ export const Steps = () => {
               From Concept to API in Minutes
             </p>
             <p class="max-w-3xl mt-6 text-xl lg:text-xl md:text-4xl leading-normal font-normal text-slate-700 tracking-tight">
-              Develop like a ninja, deploy like a rocket
+              Develop like a wizard, deploy like a magician
             </p>
           </div>
         </div>

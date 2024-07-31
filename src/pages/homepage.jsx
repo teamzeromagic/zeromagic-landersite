@@ -13,14 +13,14 @@ const HomePage = () => {
         <> 
        <Header /> 
        <Hero />
-       <TextBlock /> 
-       <Steps />
-       <Comparison />
        <Auth /> 
        <Innovation /> 
        <GraphQL />
        <MagicAI /> 
        <Partner />
+       <TextBlock /> 
+       <Steps />
+       <Comparison />
        <Help />
        <Modules /> 
         </>

@@ -160,7 +160,7 @@ export const Hero = () => {
       loop={true}> 
       </video> */}
         </div>
-        <div class="absolute left-0 right-0 bottom-0 -mb-16 z-0 h-3/5 bg-darkblue"></div>
+        <div class="absolute left-0 right-0 bottom-0 -mb-16 z-0 h-3/5 bg-slate-900"></div>
       </div>
 
       {/* <div className="mx-auto max-w-8xl">
