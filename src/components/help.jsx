@@ -14,13 +14,13 @@ const Help = () => {
           </div>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-[3vmin] mt-12 items-center">
-         
-          
+
+
           <div class="lg:col-span-2 text-white bg-base rounded-lg flex flex-col-reverse lg:flex-row items-center sm:text-center lg:text-left">
             <div class="relative z-10 self-end">
               <img
                 src={Docs}
-                alt="Docs" 
+                alt="Docs"
                 className="w-5/6 rounded-lg object-cover h-full"
                 loading="lazy"
               />

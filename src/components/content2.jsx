@@ -390,10 +390,12 @@ export const Comparison = () => {
               Why <span className="text-green">ZeroMagic?</span> No code, just
               magic!
             </p>
+            <p class="max-w-3xl mt-6 text-xl lg:text-xl md:text-4xl leading-normal font-normal text-slate-700 tracking-tight">
+            Transform code into reality with a wave of your wand!
+            </p>
           </div>
         </div>
       </div>
-      <br />
       <br />
 
       <div class="max-w-8xl mx-auto">
