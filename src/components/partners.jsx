@@ -2,14 +2,14 @@ import MicrosoftStartup from "../assets/ms-startups.jpg"
 
 export default function Partner() {
     return (
-        <div class="py-[7vmin] text-center bg-slate-900 text-gray-400 font-semibold">
+        <div class="py-[7vmin] text-center bg-white text-gray-400 font-semibold">
         <div class="max-w-8xl mx-auto flex flex-col items-center gap-6">
-          <h2 class="text-xs font-semibold text-green uppercase tracking-widest">
+          <h2 class="text-xs font-semibold text-primary uppercase tracking-widest">
           Meet Our Partners
           </h2>
           <p class="text-2xl md:text-4xl tracking-tight leading-tight">
           {" "}
-            <span class="text-white font-bold">Partners Backing Our No-Code Platform</span> 
+            <span class="text-slate-900 font-bold">Partners Backing Our No-Code Platform</span> 
           </p> 
         </div>
 

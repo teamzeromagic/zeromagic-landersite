@@ -206,7 +206,7 @@ export default function NavbarExample() {
             <a
               target="blank"
               href={WAITINGLIST_FORM}
-              className="whitespace-nowrap px-4 py-2 border border-transparent rounded-md shadow-sm text-sm text-white bg-base"
+              className="whitespace-nowrap px-4 py-2 border border-transparent rounded-md shadow-sm text-sm text-white bg-primary"
             >
               <strong className="font-bold">Get Started</strong>
             </a>

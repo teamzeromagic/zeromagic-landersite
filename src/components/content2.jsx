@@ -11,13 +11,25 @@ import Cross from "../assets/cross.png";
 import Graphql from "../assets/graphql.png";
 import { AUTHENTICATION, GRAPHQL, MAGIC_AI, REST_API } from "../constants";
 
+import GraphqlWorkflow from "../assets/graphql-workflow.png";
+import Mock1 from "../assets/mock1.png";
+import Users from "../assets/users.png";
+import Template from "../assets/template configuration.png";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
+import { Typewriter } from "react-simple-typewriter";
+import { MdLockOutline } from "react-icons/md";
+import { FaPencilRuler } from "react-icons/fa";
+import { RiPencilRuler2Line } from "react-icons/ri";
+import { LuLineChart, LuNetwork, LuRocket } from "react-icons/lu";
+
 export const WAITINGLIST_FORM =
   "https://forms.zohopublic.com/zeromagic/form/JoinZeromagicWaitlist/formperma/pHzlI6Y3c7WGeevzUK95oriLUJbQeY2BCGOtaZO57cY";
 
 export const Modules = () => {
   return (
-    <div class="py-[8vmin] bg-base relative px-4 sm:px-6 overflow-hidden">
-      <div class="max-w-8xl mx-auto text-gray-400">
+    <div class="py-[8vmin] bg-primaryBg relative px-4 sm:px-6 overflow-hidden">
+      {/* <div class="max-w-8xl mx-auto text-gray-400">
         <h2 class="text-xs font-semibold text-green uppercase tracking-widest">
           Focus on Your Vision
         </h2>
@@ -45,24 +57,24 @@ export const Modules = () => {
           height="1992"
           loading="lazy"
         />
-      </div>
+      </div> */}
 
-      <div class="py-[8vmin] mt-10 text-center bg-base text-gray-400 font-semibold">
-        <div class="max-w-8xl mx-auto flex flex-col items-center gap-6">
-          <h2 class="text-xs font-semibold text-yellow uppercase tracking-widest">
+      <div class=" text-center text-slate-900">
+        <div class="max-w-4xl mx-auto flex flex-col items-center gap-6">
+          {/* <h2 class="text-xs font-semibold text-primary uppercase tracking-widest">
             Launch your Backend
-          </h2>
-          <p class="text-2xl md:text-4xl tracking-tight leading-tight">
+          </h2> */}
+          <p class="text-2xl md:text-4xl font-bold tracking-tight leading-tight">
             Thousands are already{" "}
-            <span class="text-white font-bold">creating</span> innovative
+            <span class="text-primary font-bold">creating</span> innovative
             <br />
             solution with low code tool.
           </p>
           <p class="text-2xl md:text-4xl tracking-tight leading-tight">
-            <span class="text-white font-bold">Join the movement!</span>
+            <span class="text-primary font-bold">Join the movement!</span>
           </p>
           <a
-            class="plausible-event-name=Signup-CTA-clicked mt-10 text-xl text-black font-medium tracking-tight py-4 px-6 rounded-lg bg-yellow plausible-event-trial_onboarding_test=variant"
+            class="mt-10 text-xl text-white font-medium tracking-tight py-4 px-6 rounded-lg bg-primary plausible-event-trial_onboarding_test=variant"
             href={WAITINGLIST_FORM}
           >
             Get started now — free
@@ -113,9 +125,14 @@ export const Modules = () => {
   );
 };
 
+
+
 export const Auth = () => {
   return (
-    <div  id="authentication" class="relative bg-slate-900 px-4 sm:px-6 overflow-hidden">
+    <div
+      id="authentication"
+      class="relative bg-slate-900 px-4 sm:px-6 overflow-hidden"
+    >
       <div class="max-w-8xl mx-auto">
         <div class="grid gap-[8vmin] grid-cols-12 items-center">
           <div class="col-span-12 lg:col-span-5 mt-12">
@@ -361,15 +378,15 @@ export const GraphQL = () => {
 
 export const Comparison = () => {
   return (
-    <div class="relative bg-white py-[8vmin]  overflow-hidden">
+    <div class="relative bg-white py-[1vmin] mb-4 overflow-hidden">
       <div class="max-w-8xl mx-auto">
-        <h2 class="text-xs text-green uppercase font-bold tracking-widest flex justify-between items-center">
+        {/* <h2 class="text-xs text-green uppercase font-bold tracking-widest flex justify-between items-center">
           <span class="flex-shrink-0">Hassle-Free Development</span>
           <div class="w-full h-[2px] ml-5 bg-black opacity-10"></div>
-        </h2>
+        </h2> */}
         <div class="grid gap-[4vmin] grid-cols-12 items-center">
           <div class="col-span-12">
-            <p class="mt-10 text-2xl lg:text-4xl font-bold text-black tracking-tight leading-none">
+            <p class="mt-10 text-center text-2xl lg:text-5xl font-bold text-black tracking-tight leading-none">
               Why <span className="text-green">ZeroMagic?</span> No code, just
               magic!
             </p>
@@ -541,98 +558,181 @@ export const Comparison = () => {
   );
 };
 
-export const Steps = () => {
+
+export const ShortCut = () => {
+
+  const shortcutItems = [
+    {
+      "tag" : "Docs",
+      "name" : "Comprehensive Docs",
+      "desc" : "Explore our comprehensive guides and tutorials",
+      "url" : "https://docs.zeromagic.in/introduction",
+      "img" : Rapid 
+    },
+    {
+      "tag" : "Blog",
+      "name" : "Read Our Blog",
+      "desc" : "Stay updated with our latest articles and insights",
+      "url" : "https://docs.zeromagic.in/blog/introduction",
+      "img" : Scalability
+    },
+    {
+      "tag" : "Product",
+      "name" : "Explore Our Product",
+      "desc" : "Learn more about our product features and benefits",
+      "url" : "",
+      "img" : Deploy 
+    },
+  ];
+
   return (
-    <div class="relative bg-white py-[6vmin] px-4 sm:px-6 overflow-hidden">
+    <div class="relative bg-primaryBg py-[4vmin] px-4 sm:px-6 overflow-hidden">
       <div class="max-w-8xl mx-auto">
-        <h2 class="text-xs text-red uppercase font-bold tracking-widest flex justify-between items-center">
-          <span class="flex-shrink-0">Business Made Easy</span>
-          <div class="w-full h-[2px] ml-5 bg-black opacity-10"></div>
-        </h2>
-        <div class="grid gap-[4vmin] grid-cols-12 items-center">
+ 
+        <div class="grid grid-cols-12 gap-4 items-center">
           <div class="col-span-12">
-            <p class="mt-10 text-2xl lg:text-4xl font-bold text-black tracking-tight leading-none">
-              From Concept to API in Minutes
+            <p class="mt-10 text-center text-2xl lg:text-5xl font-bold text-black tracking-tight leading-none">
+            Explore Our <span className="text-darkblue">Resources</span> 
             </p>
-            <p class="max-w-3xl mt-6 text-xl lg:text-xl md:text-4xl leading-normal font-normal text-slate-700 tracking-tight">
-              Develop like a ninja, deploy like a rocket
-            </p>
+           
           </div>
         </div>
       </div>
       <br />
       <br />
-      <div class="max-w-8xl mx-auto">
-        <div class="grid gap-[6vmin] grid-cols-1 md:grid-cols-12 items-start">
-          <div class="col-span-3">
+
+      <div class="max-w-6xl mx-auto">
+        <div class="grid gap-8 grid-cols-1 md:grid-cols-12 items-start">
+         
+         {shortcutItems.map((item, idx) => (
+
+          <div class="col-span-4 rounded-lg bg-white">
             <img
-              src={Rapid}
-              alt="Rapid Prototyping"
-              className="rounded-lg object-cover w-full h-80"
+              src={item.img}
+              alt={item.name}
+              className="rounded-t-lg object-cover w-full h-56"
               loading="lazy"
-            />
-            <h3 class="mt-10 text-2xl lg:text-2xl font-bold text-black tracking-tight leading-none">
-              Create
+            /> 
+            <div className="p-6 space-y-4">
+            <div className="flex items-center text-xs">
+                  <div className="relative z-10 rounded-full uppercase text-blue bg-blueBg px-3 py-1.5 font-bold">
+                  {item.tag}
+                  </div>
+                </div>
+            <h3 class=" text-2xl lg:text-2xl font-bold text-black tracking-tight leading-none">
+            {item.name}
             </h3>
-            <p class="max-w-xl mt-6 text-lg leading-normal font-normal text-slate-700 tracking-tight">
-              Establish REST endpoints, define authentication with built-in
-              functionality, and validate your data.
-            </p>
-          </div>
-          <div class="col-span-3">
-            <img
-              src={Customization}
-              alt="Customization"
-              className="rounded-lg object-cover w-full h-80"
-              loading="lazy"
-            />
-            <h3 class="mt-10 text-2xl lg:text-2xl font-bold text-black tracking-tight leading-none">
-              Build
-            </h3>
-            <p class="max-w-xl mt-6 text-lg leading-normal font-normal text-slate-700 tracking-tight">
-              Combine APIs, third-party tools, database queries seamlessly,
-              enabling smooth data flow and interaction.
-            </p>
+            <p class="max-w-xl  text-lg leading-normal font-normal text-slate-700 tracking-tight">
+            {item.desc}
+            </p> 
+            <a 
+            href={item.url}
+            className="mt-6 text-blue cursor-pointer hover:underline text-base font-bold leading-7">
+              Learn more →
+            </a>
+            </div>
           </div>
 
-          <div class="col-span-3">
-            <img
-              src={Deploy}
-              alt="Deploy"
-              className="rounded-lg object-cover w-full h-80"
-              loading="lazy"
-            />
-            <h3 class="mt-10 text-2xl lg:text-2xl font-bold text-black tracking-tight leading-none">
-              Deploy
-            </h3>
-            <p class="max-w-xl mt-6 text-lg leading-normal font-normal text-slate-700 tracking-tight">
-              Go live in seconds with a single click, eliminating the need for
-              devops tasks. Our platform handles hosting for you.
-            </p>
-          </div>
-
-          <div class="col-span-3">
-            <img
-              src={Scalability}
-              alt="Scale"
-              className="rounded-lg object-cover w-full h-80"
-              loading="lazy"
-            />
-            <h3 class="mt-10 text-2xl lg:text-2xl font-bold text-black tracking-tight leading-none">
-              Scale
-            </h3>
-            <p class="max-w-xl mt-6 text-lg leading-normal font-normal text-slate-700 tracking-tight">
-              Build applications that can effortlessly scale to accommodate
-              growing user bases and increased demand
-            </p>
-          </div>
+))}
+ 
+ 
+     
+ 
         </div>
       </div>
     </div>
   );
 };
 
+export const Steps = () => {
 
+  const stepItems = [
+    {
+     "name" : "Design Your API",
+     "desc" : "Define REST and GraphQL endpoints, establish authentication, and validate data effortlessly",
+     "tag" : "Design",
+     "icon" :  <RiPencilRuler2Line className="w-7 h-7 text-primary" /> ,
+     "url" : "https://docs.zeromagic.in/basics/modules/quickstart"
+    }, 
+    {
+      "name" : "Build API Logic",
+      "desc" : "Seamlessly integrate APIs, third-party tools, and database queries to enable smooth data flow and interaction",
+      "tag" : "Build",
+     "icon" :  <LuNetwork className="w-7 h-7 text-primary" />,
+     "url" : "https://docs.zeromagic.in/basics/modules/introduction"
+     },
+     {
+      "name" : "Deploy Instantly",
+      "desc" : "Go live in seconds with a single click, eliminating the need for devops tasks. Our platform handles hosting for you",
+      "tag" : "Cloud",
+     "icon" :  <LuRocket className="w-7 h-7 text-primary" /> ,
+     "url" : "https://docs.zeromagic.in/basics/deployment"
+     },
+     {
+      "name" : "Scale Without Limits",
+      "desc" : "Build applications that can effortlessly scale to accommodate growing user bases and increased demand",
+      "tag" : "Scale",
+     "icon" :  <LuLineChart className="w-7 h-7 text-primary" /> ,
+     "url" : "https://docs.zeromagic.in/introduction"
+     }
+  ]
+
+  return (
+    <div class="relative bg-white py-[4vmin] px-4 sm:px-6 overflow-hidden">
+      <div class="max-w-8xl mx-auto">
+        {/* <h2 class="text-xs text-red uppercase font-bold tracking-widest flex justify-between items-center">
+          <span class="flex-shrink-0">Business Made Easy</span>
+          <div class="w-full h-[2px] ml-5 bg-black opacity-10"></div>
+        </h2> */}
+        <div class="grid grid-cols-12 gap-4 items-center">
+          <div class="col-span-12">
+            <p class="mt-10 text-center text-2xl lg:text-5xl font-bold text-black tracking-tight leading-none">
+              From <span className="text-darkblue">Concept</span> to API in Minutes
+            </p>
+           
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+
+      <div class="max-w-5xl mx-auto">
+        <div class="grid gap-8 grid-cols-1 md:grid-cols-12 items-start">
+          
+          {stepItems.map((item, idx) => (
+
+          <div class="col-span-6" key={idx}>
+            <div className="mx-auto max-w-2xl rounded-2xl ring-1 ring-gray-200 lg:mx-0 lg:flex lg:max-w-none">
+              <div className="p-6 sm:p-8 lg:flex-auto">
+                <div className="flex items-center text-xs">
+                  <div className="relative z-10 rounded-full text-blue uppercase bg-blueBg px-3 py-1.5 font-bold">
+                    {item.tag}
+                  </div>
+                </div>
+
+                <h3 className="text-2xl mt-3 flex gap-x-2 items-center font-bold tracking-tight text-gray-900">
+                {item.icon} {item.name}
+                </h3>
+                <p className="mt-4 text-base leading-7 text-gray-600">
+                  {item.desc}
+                </p>
+
+                <a 
+                href={item.url}
+                target="blank"
+                className="mt-4 hover:underline text-blue text-base font-bold leading-7">
+                  Explore {item.tag} →
+                </a> 
+              </div>
+            </div>
+          </div>
+          ))}
+ 
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export const MagicAI = () => {
   return (
@@ -669,15 +769,18 @@ export const MagicAI = () => {
               Magic AI - Where Code Meets Magic
             </p>
             <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
-            Accelerate API development with our AI-powered assistant, transforming complex tasks into effortless creations
+              Accelerate API development with our AI-powered assistant,
+              transforming complex tasks into effortless creations
             </p>
 
             <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
-            From GraphQL to REST, let Magic AI handle the heavy lifting, freeing you to focus on innovation.
+              From GraphQL to REST, let Magic AI handle the heavy lifting,
+              freeing you to focus on innovation.
             </p>
 
             <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
-            Enhance your API development with intelligent documentation assistance
+              Enhance your API development with intelligent documentation
+              assistance
             </p>
 
             <a
@@ -686,6 +789,124 @@ export const MagicAI = () => {
             >
               Explore Magic AI→
             </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+
+
+export const HomeBanner = () => {
+  return (
+    <div 
+      class="mt-[2vmin] relative bg-white px-4 sm:px-6 overflow-hidden"
+    >
+      <div class="max-w-8xl mx-auto">
+        <div class="grid gap-[8vmin] grid-cols-12 items-center">
+          <div class="col-span-12 lg:col-span-5 mt-12">
+         
+          <p
+          class="max-w-8xl text-2xl md:text-4xl font-bold text-black tracking-tight"
+          style={{lineHeight:1.35}}
+        >
+      Building, deploying & scaling your application happen in minutes, saving you time and getting things done faster.
+         </p>
+         {/* <a
+          class="text-darkblue font-bold text-xl lg:text-3xl inline-block mt-[4vmin] tracking-tight"
+          href={WAITINGLIST_FORM}
+        >
+          Try Zeromagic for free till you like →
+        </a> */}
+          </div>
+          <div class="col-span-7">
+            <div class="w-screen h-auto mt-12">
+              <div class="max-w-2xl rounded-3xl overflow-hidden bg-white">
+              <Carousel
+            infiniteLoop={true}
+            showArrows={true}
+            autoPlay={true}
+            showStatus={false}
+            showIndicators={false}
+            showThumbs={false}
+            swipeable={true}
+            autoFocus={true}
+          >
+
+          <div class="relative">
+              <img
+                src={Mock1}
+                alt="Magic Work flow"
+                class="lg:w-[90rem] sm:w-[40rem]  md:w-[50rem] w-[25rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
+              />
+
+              <div class="absolute inset-0 flex flex-col justify-end overflow-hidden">
+                <div class="h-[35rem] bg-gradient-to-t from-black via-transparent to-transparent"></div>
+              </div>
+              <div class="absolute inset-x-0 bottom-3 flex justify-center items-center ">
+                <p class="my-10 text-xl sm:text-md font-bold text-white/95 tracking-normal leading-none">
+                Create APIs in Minutes Without Code
+                </p>
+              </div>
+            </div>
+
+            <div class="relative">
+              <img
+                src={GraphqlWorkflow}
+                alt="Graphql Work flow"
+                class="lg:w-[90rem] sm:w-[40rem]  md:w-[50rem] w-[25rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
+              />
+
+              <div class="absolute inset-0 flex flex-col justify-end overflow-hidden">
+                <div class="h-[35rem] bg-gradient-to-t from-black via-transparent to-transparent"></div>
+              </div>
+              <div class="absolute inset-x-0 bottom-3 flex justify-center items-center ">
+                <p class="my-10 text-xl sm:text-md font-bold text-white/95 tracking-normal leading-none">
+                Create Graphql by connecting multiple datasources
+                </p>
+              </div>
+            </div>
+ 
+            <div class="relative">
+              <img
+                src={Users}
+                alt="Manage users"
+                class="lg:w-[90rem] sm:w-[40rem]  md:w-[50rem] w-[25rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
+              />
+
+              <div class="absolute inset-0 flex flex-col justify-end overflow-hidden">
+                <div class="h-[35rem] bg-gradient-to-t from-black via-transparent to-transparent"></div>
+              </div>
+              <div class="absolute inset-x-0 bottom-3 flex justify-center items-center ">
+                <p class="my-10 text-xl sm:text-md font-bold text-white/95 tracking-normal leading-none">
+                Simplify user management with secure auth options 
+                </p>
+              </div>
+            </div>  
+
+            <div class="relative">
+              <img
+                src={Template}
+                alt="Authentication"
+                class="lg:w-[90rem] sm:w-[40rem]  md:w-[50rem] w-[25rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10"
+              />
+
+              <div class="absolute inset-0 flex flex-col justify-end overflow-hidden">
+                <div class="h-[35rem] bg-gradient-to-t from-black via-transparent to-transparent"></div>
+              </div>
+              <div class="absolute inset-x-0 bottom-3 flex justify-center items-center ">
+                <p class="my-10 text-xl sm:text-md font-bold text-white/95 tracking-normal leading-none">
+                Create customized templates for a more engaging user experience 
+                </p>
+              </div>
+            </div>
+ 
+    
+          </Carousel>
+                {/* <img src={Authentication} alt="Authentication" loading="lazy" /> */}
+              </div>
+            </div>
           </div>
         </div>
       </div>

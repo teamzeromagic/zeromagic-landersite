@@ -17,7 +17,7 @@ export const Header = () => {
       />
     </div> */} 
 
-      <div class="mt-[18vmin] mx-auto max-w-8xl px-4 flex flex-col items-center gap-3 text-center">
+      <div class="mt-[18vmin] mx-auto max-w-7xl px-4 flex flex-col items-center gap-3 text-center">
         <h1 class="text-[9vmin] md:text-[6vmin] tracking-tight leading-[1] font-bold text-gray-900">
         <span class="block">AI-Powered <span class="text-darkblue font-bold">
           <Typewriter 
@@ -35,36 +35,11 @@ export const Header = () => {
       /> </span>for modern <span class="text-darkblue font-bold">Apps</span>
           </span>
 
-          {/* <p class="max-w-xl mt-6 text-xl leading-normal font-normal text-slate-700 tracking-tight">
-              Establish REST endpoints, define authentication with built-in
-              functionality, and validate your data.
-            </p>
-             */}
+     
           <span class="mt-6 block text-3xl font-semibold text-slate-700">
           Build In Days. Scale For Years
           </span>
-        
-          {/* <span class="block">Build scalable 
-          <span class="text-darkblue font-extrabold">
-          <Typewriter 
-          cursor
-          // cursorBlinking
-          delaySpeed={2000}
-          deleteSpeed={100}
-          loop={0}
-          typeSpeed={100}
-          words={[
-            ' backends',
-            ' APIs', 
-            ' GraphQL', 
-            ' features', 
-          ]}    
-      />
-          </span>
-          </span>
-          <span class="block">
-          faster with <span class="text-darkblue font-extrabold">AI</span> 
-          </span> */}
+    
         </h1>
 {/* 
         <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
@@ -77,7 +52,7 @@ export const Header = () => {
 
         <div className="my-6 flex items-center justify-center gap-x-6">
             <a
-              class="text-xl text-white font-medium tracking-tight py-4 px-6 rounded-lg border border-base bg-base"
+              class="text-xl text-white font-medium tracking-tight py-4 px-6 rounded-lg  bg-primary"
               href={WAITINGLIST_FORM}
             >
               Join the waiting list

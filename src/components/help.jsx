@@ -2,12 +2,14 @@ import Docs from "../assets/docs.png"
 import { DOC_URL } from "../constants";
 const Help = () => {
   return (
-    <div id="help" class="relative bg-slate-200 pt-[8vmin] pb-[10vmin] px-4 sm:px-6 overflow-hidden">
+    <div id="help" class="relative bg-white pt-[8vmin] pb-[10vmin] px-4 sm:px-6 overflow-hidden">
       <div class="max-w-8xl mx-auto">
         <div class="grid gap-[4vmin] grid-cols-12 items-center">
+
+
           <div class="col-span-12">
-            <p class="mt-12 text-[6vmin] font-bold text-black tracking-tight leading-[0.9] -indent-1">
-              Help getting started.
+            <p class="mt-12 text-5xl font-bold text-black tracking-tight leading-[0.9] -indent-1">
+            <span className="text-darkblue"> Magic AI</span>  - Where Code Meets Magic 
             </p>
           </div>
         </div>
@@ -25,17 +27,17 @@ const Help = () => {
             </div>
             <div class="h-full mx-auto lg:w-[41%] px-[6vmin] pt-[8vmin] lg:p-0 lg:py-[6vmin] lg:pr-[8vmin] relative z-10">
               <h3 class="text-3xl md:text-5xl leading-none font-bold tracking-tight">
-                Developer documentation.
+              Automate API Tasks with ease .
               </h3>
               <p class="max-w-lg mt-5 text-lg md:text-2xl font-normal text-slate-200">
-              Dive into this comprehensive documentation for tutorials and resources to build applications efficiently. 
+              From GraphQL to REST, let Magic AI handle the heavy lifting, freeing you to focus on innovation.
               </p>
               <a
                 href={DOC_URL}
                 target="blank"
                 class="inline-block mt-7 whitespace-nowrap px-4 py-2 border rounded-md text-md font-semibold text-white border-white hover:text-black hover:bg-white transition-all"
               >
-                Check Docs →
+                Check Magic AI →
               </a>
             </div>
           </div>
