@@ -1,7 +1,10 @@
 import { MdLockOutline, MdOutlineCloud } from "react-icons/md";
-import Authentication from "../assets/authentication.png";
-import Graphql from "../assets/graphql.png";
-
+import Database from "../assets/database.png";
+import Auth from "../assets/authentication-banner.png"
+import Integrations from "../assets/integrations.png";
+import RestAPI from "../assets/restapi.png";
+import Graphql from "../assets/graphql-banner.png";
+import Deployment from "../assets/deployment.png";
 import { useState } from "react";
 import { TiFlowMerge } from "react-icons/ti";
 import { BiLogoGraphql } from "react-icons/bi";
@@ -20,43 +23,37 @@ export const StepFeatures = () => {
     {
       'title' : 'Simplify Auth from Login to Logout', // Auth Feature
       "desc" : 'Built-in authentication handles login, logout, and user management, ensuring a secure and user-friendly system.',
-      "icon" : <MdLockOutline className="w-8 h-8" />,
-      "image" : Authentication,
+      "icon" : <MdLockOutline className="w-8 h-8" />, 
       "active" : count === 0,
     }, 
     {
       'title' : 'Visual REST API Flow Builder', // Rest API Flow builder Feature
       "desc" : 'Build robust features with a click, speeding up your time to market and delivering business value faster.',
-      "icon" : <TiFlowMerge className="w-8 h-8" />,
-      "image" : Authentication,
+      "icon" : <TiFlowMerge className="w-8 h-8" />,    
       "active" : count === 1,
     },
     {
       'title' : 'Precise Data Fetching with GraphQL', // Graphql Feature
       "desc" : 'No more unnecessary data transfer. Receive only the data you desire for a faster, more efficient experience',
       "icon" : <BiLogoGraphql className="w-8 h-8" />,
-      "image" : Authentication,
       "active" : count === 2,
-    },
-    {
-      'title' : 'Extended Integrations', // Integrations support in RestAPI
-      "desc" : 'Connect to a wide range of services and APIs to expand your application capabilities',
-      "icon" : <GrConnect className="w-8 h-8" />,
-      "image" : Authentication,
-      "active" : count === 3,
     },
     {
       'title' : 'Connect to multiple Datasources', // multiple datasource
       "desc" : 'Connect to multiple data sources and manage them efficiently from a single platform',
       "icon" : <LuDatabase className="w-8 h-8" />,
-      "image" : Authentication,
+      "active" : count === 3,
+    },
+    {
+      'title' : 'Extended Integrations', // Integrations support in RestAPI
+      "desc" : 'Connect to a wide range of services and APIs to expand your application capabilities',
+      "icon" : <GrConnect className="w-8 h-8" />,
       "active" : count === 4,
     },
     {
       'title' : 'Hassle-Free Deployment', // One click depoyment and multiple environments to manage deployment 
       "desc" : 'Our platform handles the complexities, allowing you to deploy your applications with ease and confidence',
       "icon" : <MdOutlineCloud className="w-8 h-8" />,
-      "image" : Authentication,
       "active" : count === 5,
     },
   ]
@@ -144,23 +141,33 @@ export const StepFeatures = () => {
   
             <div class="col-span-6">
               <div class="w-screen h-auto my-12">
-                <div class="max-w-3xl rounded-xl overflow-hidden bg-white">
+                <div class="max-w-2xl rounded-xl overflow-hidden bg-white">
                   {count === 0 && (
-                    <img src={Authentication} alt="Authentication" loading="lazy" />
+                    <img src={Auth} alt="Authentication" loading="lazy" />
                   )}
 
                   {count === 1 && (
-                    <img src={Graphql} alt="Graphql" loading="lazy" />
+                    <img src={RestAPI} alt="Graphql" loading="lazy" />
                   )}
   
                   {count === 2 && (
-                    <img src={Authentication} alt="Authentication" loading="lazy" />
-                  )}
-
-{count === 3 && (
                     <img src={Graphql} alt="Graphql" loading="lazy" />
                   )}
-  
+
+                  {count === 3 && (
+                    <img src={Database} alt="Graphql" loading="lazy" />
+                  )}
+
+                  {count === 4 && (
+                    <img src={Integrations} alt="Integrations" loading="lazy" />
+                  )}
+
+
+                  {count === 5 && (
+                    <img src={Deployment} alt="Deployment" loading="lazy" />
+                  )}
+
+
                   {/* <video class="video w-full" src="/videos/themes.mp4" poster="/images/home/themes.webp" preload="none" muted="" loop=""></video> */}
                 </div>
               </div>

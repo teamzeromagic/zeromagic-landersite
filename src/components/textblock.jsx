@@ -8,7 +8,7 @@ const TextBlock = () => {
           class="max-w-8xl text-2xl md:text-4xl font-bold text-black tracking-tight"
           style={{lineHeight:1.35}}
         >
-      ZeroMagic is a <span class="text-darkblue">AI-powered low-code</span> platform that builds backend microservices super fast.
+      ZeroMagic is a <span class="text-green">AI-powered low-code</span> platform that builds backend microservices super fast.
       Now building, deploying & scaling your application happen in minutes, saving you time and getting things done faster.
          </p>
         <a

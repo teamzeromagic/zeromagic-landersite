@@ -36,7 +36,7 @@ export const Header = () => {
           </span>
 
      
-          <span class="mt-6 block text-3xl font-semibold text-slate-700">
+          <span class="mt-6 block text-3xl font-semibold text-gray-600">
           Build In Days. Scale For Years
           </span>
     
@@ -52,7 +52,7 @@ export const Header = () => {
 
         <div className="my-6 flex items-center justify-center gap-x-6">
             <a
-              class="text-xl text-white font-medium tracking-tight py-4 px-6 rounded-lg  bg-primary"
+              class="text-xl text-white font-medium tracking-tight py-4 px-6 rounded-lg  bg-green"
               href={WAITINGLIST_FORM}
             >
               Join the waiting list

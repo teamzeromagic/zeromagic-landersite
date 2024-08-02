@@ -5,8 +5,7 @@
 /.pnp
 /.firebase
 .pnp.js
-
-test.ipynb
+ 
 
 # testing
 /coverage

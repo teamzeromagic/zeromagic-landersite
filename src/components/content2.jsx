@@ -1,14 +1,10 @@
-import Authentication from "../assets/authentication.png";
-import ServiceModules from "../assets/svc-graphql.png";
-import Gif from "../assets/prototype.gif";
-import Rapid from "../assets/rapid.jpg";
-import MagicVid from "../assets/graphql-magic.mp4";
-import Customization from "../assets/customization.png";
-import Deploy from "../assets/deploy.jpg";
-import Scalability from "../assets/scale.png";
+import Blog from "../assets/blog.png";
+import Documentation from "../assets/documentation.png"; 
 import Check from "../assets/check-mark.png";
 import Cross from "../assets/cross.png";
 import Graphql from "../assets/graphql.png";
+import Product from "../assets/product.png";
+
 import { AUTHENTICATION, GRAPHQL, MAGIC_AI, REST_API } from "../constants";
 
 import GraphqlWorkflow from "../assets/graphql-workflow.png";
@@ -16,10 +12,7 @@ import Mock1 from "../assets/mock1.png";
 import Users from "../assets/users.png";
 import Template from "../assets/template configuration.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
-import { Typewriter } from "react-simple-typewriter";
-import { MdLockOutline } from "react-icons/md";
-import { FaPencilRuler } from "react-icons/fa";
+import { Carousel } from "react-responsive-carousel"; 
 import { RiPencilRuler2Line } from "react-icons/ri";
 import { LuLineChart, LuNetwork, LuRocket } from "react-icons/lu";
 
@@ -66,7 +59,7 @@ export const Modules = () => {
           </h2> */}
           <p class="text-2xl md:text-4xl font-bold tracking-tight leading-tight">
             Thousands are already{" "}
-            <span class="text-primary font-bold">creating</span> innovative
+            <span class="text-green font-bold">creating</span> innovative
             <br />
             solution with low code tool.
           </p>
@@ -127,149 +120,149 @@ export const Modules = () => {
 
 
 
-export const Auth = () => {
-  return (
-    <div
-      id="authentication"
-      class="relative bg-slate-900 px-4 sm:px-6 overflow-hidden"
-    >
-      <div class="max-w-8xl mx-auto">
-        <div class="grid gap-[8vmin] grid-cols-12 items-center">
-          <div class="col-span-12 lg:col-span-5 mt-12">
-            <h2 class="text-xs text-green uppercase font-bold tracking-widest flex justify-between items-center">
-              <span class="flex-shrink-0">Happy Users, Happy You</span>
-            </h2>
-            <p class="mt-6 text-2xl lg:text-5xl font-bold text-white tracking-tight">
-              From loging to logout , simplify authentication
-            </p>
-            <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
-              Our authentication process is designed to build trust
-              effortlessly, requiring no coding skills from your end.
-            </p>
-            <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
-              Enjoy hassle-free access management and provide your users with a
-              smooth and secure journey, enhancing their overall satisfaction.
-            </p>
-            <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
-              Enjoy peace of mind knowing your authentication needs are covered
-              with simplicity at its core."
-            </p>
-            <a
-              class="inline-block mt-6 text-xl lg:text-2xl text-green font-semibold tracking-tight hover:underline"
-              href={AUTHENTICATION}
-            >
-              Explore Authentication →
-            </a>
-          </div>
-          <div class="col-span-7">
-            <div class="w-screen h-auto mt-12">
-              <div class="max-w-7xl rounded-3xl overflow-hidden bg-white">
-                <img src={Authentication} alt="Authentication" loading="lazy" />
+// export const Auth = () => {
+//   return (
+//     <div
+//       id="authentication"
+//       class="relative bg-slate-900 px-4 sm:px-6 overflow-hidden"
+//     >
+//       <div class="max-w-8xl mx-auto">
+//         <div class="grid gap-[8vmin] grid-cols-12 items-center">
+//           <div class="col-span-12 lg:col-span-5 mt-12">
+//             <h2 class="text-xs text-green uppercase font-bold tracking-widest flex justify-between items-center">
+//               <span class="flex-shrink-0">Happy Users, Happy You</span>
+//             </h2>
+//             <p class="mt-6 text-2xl lg:text-5xl font-bold text-white tracking-tight">
+//               From loging to logout , simplify authentication
+//             </p>
+//             <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
+//               Our authentication process is designed to build trust
+//               effortlessly, requiring no coding skills from your end.
+//             </p>
+//             <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
+//               Enjoy hassle-free access management and provide your users with a
+//               smooth and secure journey, enhancing their overall satisfaction.
+//             </p>
+//             <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
+//               Enjoy peace of mind knowing your authentication needs are covered
+//               with simplicity at its core."
+//             </p>
+//             <a
+//               class="inline-block mt-6 text-xl lg:text-2xl text-green font-semibold tracking-tight hover:underline"
+//               href={AUTHENTICATION}
+//             >
+//               Explore Authentication →
+//             </a>
+//           </div>
+//           <div class="col-span-7">
+//             <div class="w-screen h-auto mt-12">
+//               <div class="max-w-7xl rounded-3xl overflow-hidden bg-white">
+//                 <img src={Authentication} alt="Authentication" loading="lazy" />
 
-                {/* <video class="video w-full" src="/videos/themes.mp4" poster="/images/home/themes.webp" preload="none" muted="" loop=""></video> */}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+//                 {/* <video class="video w-full" src="/videos/themes.mp4" poster="/images/home/themes.webp" preload="none" muted="" loop=""></video> */}
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
 
-export const Content4 = () => {
-  return (
-    <div class="relative bg-white py-[8vmin] px-4 sm:px-6 overflow-hidden">
-      <div class="max-w-8xl mx-auto">
-        <h2 class="text-xs text-red uppercase font-bold tracking-widest flex justify-between items-center">
-          <span class="flex-shrink-0">Run your business</span>
-          <div class="w-full h-[2px] ml-5 bg-black opacity-10"></div>
-        </h2>
-        <div class="grid gap-[4vmin] grid-cols-12 items-center">
-          <div class="col-span-12">
-            <p class="mt-12 text-2xl lg:text-5xl font-bold text-black tracking-tight leading-none">
-              Benefits of Zeromagic
-            </p>
-            <p class="max-w-3xl mt-6 text-xl lg:text-2xl md:text-4xl leading-normal font-normal text-slate-700 tracking-tight">
-              Swiftly transfer you app from development to deployment
-            </p>
-          </div>
-        </div>
-      </div>
-      <br />
-      <br />
-      <div class="max-w-8xl mx-auto">
-        <div class="grid gap-[6vmin] grid-cols-1 md:grid-cols-12 items-start">
-          <div class="col-span-6">
-            <img
-              src={Rapid}
-              alt="Rapid Prototyping"
-              className="rounded-lg object-cover w-full h-80"
-              loading="lazy"
-            />
-            <h3 class="mt-10 text-2xl lg:text-3xl font-bold text-black tracking-tight leading-none">
-              Rapid Prototyping.
-            </h3>
-            <p class="max-w-xl mt-6 text-xl md:text-2xl leading-normal font-normal text-slate-700 tracking-tight">
-              Quickly create functional prototypes of your applications without
-              writing a single line of code, allowing you to iterate and refine
-              your ideas faster.
-            </p>
-          </div>
-          <div class="col-span-6">
-            <img
-              src={Customization}
-              alt="Customization"
-              className="rounded-lg object-cover w-full h-80"
-              loading="lazy"
-            />
-            <h3 class="mt-10 text-2xl lg:text-3xl font-bold text-black tracking-tight leading-none">
-              Customization
-            </h3>
-            <p class="max-w-xl mt-6 text-xl md:text-2xl leading-normal font-normal text-slate-700 tracking-tight">
-              Customize applications to meet specific business requirements and
-              user needs without requiring extensive coding expertise, enabling
-              rapid iteration and flexibility.
-            </p>
-          </div>
+// export const Content4 = () => {
+//   return (
+//     <div class="relative bg-white py-[8vmin] px-4 sm:px-6 overflow-hidden">
+//       <div class="max-w-8xl mx-auto">
+//         <h2 class="text-xs text-red uppercase font-bold tracking-widest flex justify-between items-center">
+//           <span class="flex-shrink-0">Run your business</span>
+//           <div class="w-full h-[2px] ml-5 bg-black opacity-10"></div>
+//         </h2>
+//         <div class="grid gap-[4vmin] grid-cols-12 items-center">
+//           <div class="col-span-12">
+//             <p class="mt-12 text-2xl lg:text-5xl font-bold text-black tracking-tight leading-none">
+//               Benefits of Zeromagic
+//             </p>
+//             <p class="max-w-3xl mt-6 text-xl lg:text-2xl md:text-4xl leading-normal font-normal text-slate-700 tracking-tight">
+//               Swiftly transfer you app from development to deployment
+//             </p>
+//           </div>
+//         </div>
+//       </div>
+//       <br />
+//       <br />
+//       <div class="max-w-8xl mx-auto">
+//         <div class="grid gap-[6vmin] grid-cols-1 md:grid-cols-12 items-start">
+//           <div class="col-span-6">
+//             <img
+//               src={Rapid}
+//               alt="Rapid Prototyping"
+//               className="rounded-lg object-cover w-full h-80"
+//               loading="lazy"
+//             />
+//             <h3 class="mt-10 text-2xl lg:text-3xl font-bold text-black tracking-tight leading-none">
+//               Rapid Prototyping.
+//             </h3>
+//             <p class="max-w-xl mt-6 text-xl md:text-2xl leading-normal font-normal text-slate-700 tracking-tight">
+//               Quickly create functional prototypes of your applications without
+//               writing a single line of code, allowing you to iterate and refine
+//               your ideas faster.
+//             </p>
+//           </div>
+//           <div class="col-span-6">
+//             <img
+//               src={Customization}
+//               alt="Customization"
+//               className="rounded-lg object-cover w-full h-80"
+//               loading="lazy"
+//             />
+//             <h3 class="mt-10 text-2xl lg:text-3xl font-bold text-black tracking-tight leading-none">
+//               Customization
+//             </h3>
+//             <p class="max-w-xl mt-6 text-xl md:text-2xl leading-normal font-normal text-slate-700 tracking-tight">
+//               Customize applications to meet specific business requirements and
+//               user needs without requiring extensive coding expertise, enabling
+//               rapid iteration and flexibility.
+//             </p>
+//           </div>
 
-          <div class="col-span-6">
-            <img
-              src={Deploy}
-              alt="Deploy"
-              className="rounded-lg object-cover w-full h-80"
-              loading="lazy"
-            />
-            <h3 class="mt-10 text-2xl lg:text-3xl font-bold text-black tracking-tight leading-none">
-              Push to deploy
-            </h3>
-            <p class="max-w-xl mt-6 text-xl md:text-2xl leading-normal font-normal text-slate-700 tracking-tight">
-              Deploy your applications instantly with the click of a button,
-              eliminating the need for manual configuration and deployment
-              processes, and getting your product to market faster.
-            </p>
-          </div>
+//           <div class="col-span-6">
+//             <img
+//               src={Deploy}
+//               alt="Deploy"
+//               className="rounded-lg object-cover w-full h-80"
+//               loading="lazy"
+//             />
+//             <h3 class="mt-10 text-2xl lg:text-3xl font-bold text-black tracking-tight leading-none">
+//               Push to deploy
+//             </h3>
+//             <p class="max-w-xl mt-6 text-xl md:text-2xl leading-normal font-normal text-slate-700 tracking-tight">
+//               Deploy your applications instantly with the click of a button,
+//               eliminating the need for manual configuration and deployment
+//               processes, and getting your product to market faster.
+//             </p>
+//           </div>
 
-          <div class="col-span-6">
-            <img
-              src={Scalability}
-              alt="Scalability"
-              className="rounded-lg object-fill w-full h-80"
-              loading="lazy"
-            />
-            <h3 class="mt-10 text-2xl lg:text-3xl font-bold text-black tracking-tight leading-none">
-              Scalability
-            </h3>
-            <p class="max-w-xl mt-6 text-xl md:text-2xl leading-normal font-normal text-slate-700 tracking-tight">
-              Build applications that can effortlessly scale to accommodate
-              growing user bases and increased demand, ensuring a flexible user
-              experience regardless of workload
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+//           <div class="col-span-6">
+//             <img
+//               src={Scalability}
+//               alt="Scalability"
+//               className="rounded-lg object-fill w-full h-80"
+//               loading="lazy"
+//             />
+//             <h3 class="mt-10 text-2xl lg:text-3xl font-bold text-black tracking-tight leading-none">
+//               Scalability
+//             </h3>
+//             <p class="max-w-xl mt-6 text-xl md:text-2xl leading-normal font-normal text-slate-700 tracking-tight">
+//               Build applications that can effortlessly scale to accommodate
+//               growing user bases and increased demand, ensuring a flexible user
+//               experience regardless of workload
+//             </p>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
 
 export const Innovation = () => {
   return (
@@ -387,12 +380,12 @@ export const Comparison = () => {
         <div class="grid gap-[4vmin] grid-cols-12 items-center">
           <div class="col-span-12">
             <p class="mt-10 text-center text-2xl lg:text-5xl font-bold text-black tracking-tight leading-none">
-              Why <span className="text-green">ZeroMagic?</span> No code, just
+              Why <span className="text-darkblue">ZeroMagic?</span> No code, just
               magic!
             </p>
-            <p class="max-w-3xl mt-6 text-xl lg:text-xl md:text-4xl leading-normal font-normal text-slate-700 tracking-tight">
+            {/* <p class="max-w-3xl mt-6 text-xl lg:text-xl md:text-4xl leading-normal font-normal text-slate-700 tracking-tight">
             Transform code into reality with a wave of your wand!
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
@@ -569,21 +562,21 @@ export const ShortCut = () => {
       "name" : "Comprehensive Docs",
       "desc" : "Explore our comprehensive guides and tutorials",
       "url" : "https://docs.zeromagic.in/introduction",
-      "img" : Rapid 
+      "img" : Documentation 
     },
     {
       "tag" : "Blog",
       "name" : "Read Our Blog",
       "desc" : "Stay updated with our latest articles and insights",
       "url" : "https://docs.zeromagic.in/blog/introduction",
-      "img" : Scalability
+      "img" : Blog 
     },
     {
       "tag" : "Product",
       "name" : "Explore Our Product",
       "desc" : "Learn more about our product features and benefits",
       "url" : "",
-      "img" : Deploy 
+      "img" : Product 
     },
   ];
 
@@ -736,67 +729,67 @@ export const Steps = () => {
   );
 };
 
-export const MagicAI = () => {
-  return (
-    <div class="relative bg-slate-900 py-[8vmin] px-4 sm:px-6 overflow-hidden">
-      <div class="max-w-8xl mx-auto">
-        <div class="grid gap-[4vmin] grid-cols-12 items-center">
-          <div class="flex justify-center col-span-12 md:col-span-7 h-auto md:h-[800px] relative">
-            <div class="relative h-full w-full overflow-hidden bg-white rounded-lg md:rounded-xl lg:rounded-2xl flex flex-col justify-center">
-              <video
-                autoPlay={true}
-                class="video w-full object-cover"
-                src={MagicVid}
-                preload="none"
-                // poster={Workflow}
-                muted={true}
-                loop={true}
-              ></video>
+// export const MagicAI = () => {
+//   return (
+//     <div class="relative bg-slate-900 py-[8vmin] px-4 sm:px-6 overflow-hidden">
+//       <div class="max-w-8xl mx-auto">
+//         <div class="grid gap-[4vmin] grid-cols-12 items-center">
+//           <div class="flex justify-center col-span-12 md:col-span-7 h-auto md:h-[800px] relative">
+//             <div class="relative h-full w-full overflow-hidden bg-white rounded-lg md:rounded-xl lg:rounded-2xl flex flex-col justify-center">
+//               <video
+//                 autoPlay={true}
+//                 class="video w-full object-cover"
+//                 src={MagicVid}
+//                 preload="none"
+//                 // poster={Workflow}
+//                 muted={true}
+//                 loop={true}
+//               ></video>
 
-              {/* <video
-                class="video w-full"
-                src="/videos/portal.mp4"
-                poster="/images/home/portal.webp"
-                preload="none"
-                muted=""
-                loop=""
-              ></video> */}
-            </div>
-          </div>
-          <div class="col-span-12 md:col-span-5 mt-12">
-            <h2 class="text-xs text-yellow uppercase font-bold tracking-widest flex justify-between items-center">
-              <span class="flex-shrink-0">Automate API Tasks with Ease</span>
-            </h2>
-            <p class="mt-6 text-2xl lg:text-5xl font-bold text-white tracking-tight leading-tight">
-              Magic AI - Where Code Meets Magic
-            </p>
-            <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
-              Accelerate API development with our AI-powered assistant,
-              transforming complex tasks into effortless creations
-            </p>
+//               {/* <video
+//                 class="video w-full"
+//                 src="/videos/portal.mp4"
+//                 poster="/images/home/portal.webp"
+//                 preload="none"
+//                 muted=""
+//                 loop=""
+//               ></video> */}
+//             </div>
+//           </div>
+//           <div class="col-span-12 md:col-span-5 mt-12">
+//             <h2 class="text-xs text-yellow uppercase font-bold tracking-widest flex justify-between items-center">
+//               <span class="flex-shrink-0">Automate API Tasks with Ease</span>
+//             </h2>
+//             <p class="mt-6 text-2xl lg:text-5xl font-bold text-white tracking-tight leading-tight">
+//               Magic AI - Where Code Meets Magic
+//             </p>
+//             <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
+//               Accelerate API development with our AI-powered assistant,
+//               transforming complex tasks into effortless creations
+//             </p>
 
-            <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
-              From GraphQL to REST, let Magic AI handle the heavy lifting,
-              freeing you to focus on innovation.
-            </p>
+//             <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
+//               From GraphQL to REST, let Magic AI handle the heavy lifting,
+//               freeing you to focus on innovation.
+//             </p>
 
-            <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
-              Enhance your API development with intelligent documentation
-              assistance
-            </p>
+//             <p class="mt-6 text-xl lg:text-2xl text-slate-300 tracking-tight">
+//               Enhance your API development with intelligent documentation
+//               assistance
+//             </p>
 
-            <a
-              class="inline-block mt-6 text-xl lg:text-2xl text-yellow font-semibold tracking-tight hover:underline"
-              href={MAGIC_AI}
-            >
-              Explore Magic AI→
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+//             <a
+//               class="inline-block mt-6 text-xl lg:text-2xl text-yellow font-semibold tracking-tight hover:underline"
+//               href={MAGIC_AI}
+//             >
+//               Explore Magic AI→
+//             </a>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
 
 
 
