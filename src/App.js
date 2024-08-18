@@ -5,9 +5,12 @@ import Contact from './pages/contact';
 import Navbar from './components/navbar';
 import Footer from './components/footer';  
 import NavbarExample from './components/navbar-menu';
+import { useState } from 'react';
 
 function App() {
  
+  const [email , setEmail] = useState();
+
   return (
     <>
        {/* <Navbar /> */}
@@ -15,7 +18,7 @@ function App() {
      <BrowserRouter>
      <Routes>
         <Route exact path="/" element={<HomePage />} />
-        <Route path="/contact/" element={<Contact />} />  
+        {/* <Route path="/contact/" element={<Contact />} />   */}
 
         {/* <Route path="/docs" component={() => {
           window.location.href = '/docs/index.html';

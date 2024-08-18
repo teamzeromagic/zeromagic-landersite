@@ -1,22 +1,27 @@
 import Logo from "../assets/logo-full.svg";
-import { AUTHENTICATION, BLOG_URL, DOC_URL, GRAPHQL, INTEGRATIONS, MAGIC_AI, REST_API } from "../constants";
+import { AUTHENTICATION, BLOG_URL, DOC_URL, GRAPHQL, INTEGRATIONS, LEARN_URL, MAGIC_AI, REST_API } from "../constants";
 export default function Footer() {
   
-  const learn = [
+  const resources = [
     {
       id: 0,
       title: "Magic AI",
-      link: {MAGIC_AI},
+      link: MAGIC_AI,
     },
     {
       id: 1,
       title: "Documentation",
-      link: {DOC_URL},
+      link: DOC_URL,
     },
     {
       id: 2,
       title: "Blogs",
-      link: {BLOG_URL},
+      link: BLOG_URL,
+    },
+    {
+      id: 3,
+      title: "Learn",
+      link: LEARN_URL,
     }
 
   ];
@@ -25,22 +30,22 @@ export default function Footer() {
     {
       id: 1,
       title: "Rest API",
-      link: {REST_API},
+      link: REST_API,
     },
     {
       id: 2,
       title: "GraphQL",
-      link: {GRAPHQL},
+      link: GRAPHQL,
     },
     {
       id: 3,
       title: "Authentication",
-      link: {AUTHENTICATION},
+      link: AUTHENTICATION,
     },
     {
       id: 4,
       title: "Integrations",
-      link: {INTEGRATIONS},
+      link: INTEGRATIONS,
     },
   ];
 
@@ -94,7 +99,7 @@ export default function Footer() {
               {product.map((item) => (
                 <li>
                   <a
-                    className="block py-2 text-slate-700 leading-tight hover:text-white"
+                    className="block py-2 text-slate-700 leading-tight hover:text-slate-900 hover:underline"
                     href={item.link}
                   >
                     {item.title}
@@ -104,9 +109,9 @@ export default function Footer() {
             </ul>
             <ul className="flex items-start flex-col">
               <li className="text-md text-gray-900 font-bold mb-1">Learn</li>
-              {learn.map((item) => (
+              {resources.map((item) => (
                 <li>
-                  <a className="block py-2 text-slate-700 leading-tight hover:text-white" href={item.link}>
+                  <a className="block py-2 text-slate-700 leading-tight hover:text-slate-900 hover:underline" href={item.link}>
                     {item.title}
                   </a>
                 </li>
@@ -116,7 +121,7 @@ export default function Footer() {
               <li className="text-md text-white font-bold mb-1">Policies</li>
               {policies.map((item) => (
                 <li>
-                  <a className="block py-2 text-slate-700 leading-tight hover:text-white" href={item.link}>
+                  <a className="block py-2 text-slate-700 leading-tight hover:text-slate-900 hover:underline" href={item.link}>
                     {item.title}
                   </a>
                 </li>
@@ -128,7 +133,7 @@ export default function Footer() {
               </li>
               {contact.map((item) => (
                 <li>
-                  <a className="block py-2 text-slate-700 leading-tight hover:text-white" href={item.link}>
+                  <a className="block py-2 text-slate-700 leading-tight hover:text-slate-900 hover:underline" href={item.link}>
                     {item.title}
                   </a>
                 </li>

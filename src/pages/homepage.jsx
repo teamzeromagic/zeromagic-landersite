@@ -1,5 +1,6 @@
 import Content from "../components/content";
 import { Modules, Auth,  Innovation, Comparison, Steps, GraphQL, MagicAI, HomeBanner, ShortCut } from "../components/content2";
+import { DemoVideo } from "../components/demovideo";
 import Feature from "../components/feature"; 
 import { Header } from "../components/header";
 import Help from "../components/help";
@@ -27,6 +28,7 @@ const HomePage = () => {
        <MagicAI />  */}
        <Partner />
        <Modules /> 
+       <DemoVideo />
         </>
     );
 }

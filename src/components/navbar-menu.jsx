@@ -10,6 +10,8 @@ import {
   LockClosedIcon,
 } from "@heroicons/react/24/outline";
 import {
+  AcademicCapIcon,
+  BookOpenIcon,
   ChevronDownIcon,
   PhoneIcon,
   PlayCircleIcon, 
@@ -64,8 +66,8 @@ const products = [
   }
 ];
 const callsToAction = [
-  { name: "Watch demo", href: "#", icon: PlayCircleIcon },
-  { name: "Contact sales", href: "#", icon: PhoneIcon },
+  { name: "Watch demo", href: "#demo", icon: PlayCircleIcon },
+  { name: "Resources", href: "#resources", icon: AcademicCapIcon  },
 ];
 
 function classNames(...classes) {
@@ -147,7 +149,7 @@ export default function NavbarExample() {
                     </div>
                   ))}
                 </div>
-                {/* <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+                <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
                   {callsToAction.map((item) => (
                     <a
                       key={item.name}
@@ -161,7 +163,7 @@ export default function NavbarExample() {
                       {item.name}
                     </a>
                   ))}
-                </div> */}
+                </div>
               </Popover.Panel>
             </Popover>
 

@@ -21,7 +21,7 @@ export const WAITINGLIST_FORM =
 
 export const Modules = () => {
   return (
-    <div class="py-[8vmin] bg-primaryBg relative px-4 sm:px-6 overflow-hidden">
+    <div class="pt-[8vmin] bg-primaryBg relative px-4 sm:px-6 overflow-hidden">
       {/* <div class="max-w-8xl mx-auto text-gray-400">
         <h2 class="text-xs font-semibold text-green uppercase tracking-widest">
           Focus on Your Vision
@@ -66,6 +66,7 @@ export const Modules = () => {
           <p class="text-2xl md:text-4xl tracking-tight leading-tight">
             <span class="text-primary font-bold">Join the movement!</span>
           </p>
+  
           <a
             class="mt-10 text-xl text-white font-medium tracking-tight py-4 px-6 rounded-lg bg-primary plausible-event-trial_onboarding_test=variant"
             href={WAITINGLIST_FORM}
@@ -395,8 +396,8 @@ export const Comparison = () => {
         <div class="lg:mx-44 mx-auto">
           <div class="grid gap-[6vmin]  grid-cols-1  md:grid-cols-12 items-start">
             <div className="relative col-span-12 px-5 pt-5 rounded-lg">
-              <table className="w-full border  table-fixed text-left text-sm text-gray-500 rtl:text-right dark:text-gray-400">
-                <thead className="dark:bgColor bg-slate-900 text-xs text-gray-700 dark:text-gray-400">
+              <table className="w-full border  table-fixed text-left text-sm text-gray-500 rtl:text-right">
+                <thead className="bg-slate-900 text-xs text-gray-700">
                   <tr>
                     <th scope="col" className="p-8 ">
                       <h3 class="text-2xl text-white leading-none font-bold tracking-tight">
@@ -411,7 +412,7 @@ export const Comparison = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="text-dark-xl lg:text-lg sm:text-md dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600">
+                  <tr className="text-dark-xl lg:text-lg sm:text-md ">
                     <td className="px-10 font-semibold py-4">
                       <div className="flex space-x-2">
                         <img src={Check} alt="check" />
@@ -427,7 +428,7 @@ export const Comparison = () => {
                     </td>
                   </tr>
 
-                  <tr className="text-dark-xl lg:text-lg sm:text-md dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600">
+                  <tr className="text-dark-xl lg:text-lg sm:text-md">
                     <td className="px-10  font-semibold py-4">
                       <div className="flex space-x-2">
                         <img src={Check} alt="check" />
@@ -443,7 +444,7 @@ export const Comparison = () => {
                     </td>
                   </tr>
 
-                  <tr className="text-dark-xl lg:text-lg sm:text-md dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600">
+                  <tr className="text-dark-xl lg:text-lg sm:text-md">
                     <td className="px-10 font-semibold py-4">
                       <div className="flex space-x-2">
                         <img src={Check} alt="check" />
@@ -459,7 +460,7 @@ export const Comparison = () => {
                     </td>
                   </tr>
 
-                  <tr className="text-dark-xl lg:text-lg sm:text-md dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600">
+                  <tr className="text-dark-xl lg:text-lg sm:text-md">
                     <td className="px-10 font-semibold py-4">
                       <div className="flex space-x-2">
                         <img src={Check} alt="check" />
@@ -475,7 +476,7 @@ export const Comparison = () => {
                     </td>
                   </tr>
 
-                  <tr className="text-dark-xl lg:text-lg sm:text-md dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600">
+                  <tr className="text-dark-xl lg:text-lg sm:text-md">
                     <td className="px-10 font-semibold py-4">
                       <div className="flex space-x-2">
                         <img src={Check} alt="check" />
@@ -490,7 +491,7 @@ export const Comparison = () => {
                       </div>
                     </td>
                   </tr>
-                  <tr className="text-dark-xl lg:text-lg sm:text-md dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600">
+                  <tr className="text-dark-xl lg:text-lg sm:text-md">
                     <td className="px-10 font-semibold py-4">
                       <div className="flex space-x-2">
                         <img src={Check} alt="check" />
@@ -581,7 +582,7 @@ export const ShortCut = () => {
   ];
 
   return (
-    <div class="relative bg-primaryBg py-[4vmin] px-4 sm:px-6 overflow-hidden">
+    <div class="relative bg-primaryBg py-[4vmin] px-4 sm:px-6 overflow-hidden" id="resources">
       <div class="max-w-8xl mx-auto">
  
         <div class="grid grid-cols-12 gap-4 items-center">
