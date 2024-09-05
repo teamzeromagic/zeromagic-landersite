@@ -7,8 +7,8 @@ export const AUTHENTICATION = "https://docs.zeromagic.cloud/authentication/overv
 export const INTEGRATIONS = "https://docs.zeromagic.cloud/integrations/introduction"
 export const MAGIC_AI = "https://docs.zeromagic.cloud/basics/basics/magic-ai"
 
+export const GITHUB = "https://github.com/teamzeromagic/"
 
-// export const WAITINGLIST_FORM =  "https://forms.zohopublic.com/zeromagic/form/JoinZeromagicWaitlist/formperma/pHzlI6Y3c7WGeevzUK95oriLUJbQeY2BCGOtaZO57cY";
-export const WAITINGLIST_FORM = "https://forms.zohopublic.com/zeromagic/form/ZeromagicWaitlistForm/formperma/AgfMAJ7hBxvNYCAsKvd-OskB1AOol9hrUNig-l8nN4I"
-export const SIGN_UP = "https://forms.zohopublic.com/zeromagic/form/ZeromagicWaitlistForm/formperma/AgfMAJ7hBxvNYCAsKvd-OskB1AOol9hrUNig-l8nN4I"
-// export const SIGN_UP = "https://console.zeromagic.cloud/sign-up"
+// export const WAITINGLIST_FORM = "https://forms.zohopublic.com/zeromagic/form/ZeromagicWaitlistForm/formperma/AgfMAJ7hBxvNYCAsKvd-OskB1AOol9hrUNig-l8nN4I"
+export const WAITINGLIST_FORM =  "https://console.zeromagic.cloud/sign-in";
+export const SIGN_UP = "https://console.zeromagic.cloud/sign-up"

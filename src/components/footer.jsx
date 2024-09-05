@@ -1,5 +1,5 @@
 import Logo from "../assets/logo-full.svg";
-import { AUTHENTICATION, BLOG_URL, DOC_URL, GRAPHQL, INTEGRATIONS, LEARN_URL, MAGIC_AI, REST_API } from "../constants";
+import { AUTHENTICATION, BLOG_URL, GITHUB, DOC_URL, GRAPHQL, INTEGRATIONS, LEARN_URL, MAGIC_AI, REST_API } from "../constants";
 export default function Footer() {
   
   const resources = [
@@ -22,6 +22,11 @@ export default function Footer() {
       id: 3,
       title: "Learn",
       link: LEARN_URL,
+    },
+    {
+      id: 4,
+      title: "Github",
+      link: GITHUB,
     }
 
   ];
@@ -73,11 +78,16 @@ export default function Footer() {
   ];
 
   const contact = [
+    // {
+    //   id: 1,
+    //   title: "ndrohith@zeromagic.in",
+    //   link: "mailto:ndrohith@zeromagic.in",
+    // },
     {
-      id: 1,
-      title: "ndrohith@zeromagic.in",
-      link: "mailto:ndrohith@zeromagic.in",
-    },
+      id: 2,
+      title: "zeromagic.cloud@gmail.com",
+      link: "mailto:zeromagic.cloud@gmail.com",
+    }
   ];
   const currentYear = new Date().getFullYear();
 
@@ -101,6 +111,7 @@ export default function Footer() {
                   <a
                     className="block py-2 text-slate-700 leading-tight hover:text-slate-900 hover:underline"
                     href={item.link}
+                    target="blank"
                   >
                     {item.title}
                   </a>
@@ -111,7 +122,7 @@ export default function Footer() {
               <li className="text-md text-gray-900 font-bold mb-1">Learn</li>
               {resources.map((item) => (
                 <li>
-                  <a className="block py-2 text-slate-700 leading-tight hover:text-slate-900 hover:underline" href={item.link}>
+                  <a target="blank" className="block py-2 text-slate-700 leading-tight hover:text-slate-900 hover:underline" href={item.link}>
                     {item.title}
                   </a>
                 </li>

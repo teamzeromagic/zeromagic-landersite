@@ -17,7 +17,7 @@ import {
   PlayCircleIcon, 
 } from "@heroicons/react/20/solid";
 import Logo from "../assets/logo.svg";
-import { WAITINGLIST_FORM } from '../constants';
+import { SIGN_UP, WAITINGLIST_FORM } from '../constants';
 import { AUTHENTICATION, BLOG_URL, DOC_URL, GRAPHQL, INTEGRATIONS, REST_API } from "../constants";
 
 const products = [
@@ -183,6 +183,7 @@ export default function NavbarExample() {
               Blogs
             </a>
 
+
             {/* <a
               href="#"
               className="text-base font-semibold leading-6 text-gray-600 hover:text-gray-900"
@@ -191,7 +192,7 @@ export default function NavbarExample() {
             </a> */}
 
             <a
-              href="#"
+              href="mailto:zeromagic.cloud@gmail.com"
               className="text-base font-semibold leading-6 text-gray-600 hover:text-gray-900"
             >
               Contact
@@ -201,7 +202,7 @@ export default function NavbarExample() {
 
             <a
               target="blank"
-              href={WAITINGLIST_FORM}
+              href={SIGN_UP}
               className="whitespace-nowrap px-4 border border-transparent rounded-md shadow-sm text-base text-gray-600"
             >
               <strong className="font-bold">Sign up</strong>
@@ -298,6 +299,15 @@ export default function NavbarExample() {
                   </a>
                 </div>
                 <div className="py-6">
+
+                <a
+              target="blank"
+              href={SIGN_UP}
+              className="whitespace-nowrap px-4 border border-transparent rounded-md shadow-sm text-base text-gray-600"
+            >
+              <strong className="font-bold">Sign up</strong>
+            </a>
+
                 <a
               href={WAITINGLIST_FORM}
               target="blank"
