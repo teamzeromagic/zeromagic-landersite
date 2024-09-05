@@ -5,8 +5,7 @@ import Feature from "../components/feature";
 import { Header } from "../components/header";
 import Help from "../components/help";
 import { Hero } from "../components/hero"; 
-import Partner from "../components/partners";
-import Pitch from "../components/pitch";
+import Partner from "../components/partners"; 
 import { StepFeatures } from "../components/stepfeatures";
 import  TextBlock  from "../components/textblock";
 

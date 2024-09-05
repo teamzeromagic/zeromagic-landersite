@@ -165,14 +165,7 @@ export default function NavbarExample() {
                   ))}
                 </div>
               </Popover.Panel>
-            </Popover>
-
-            <a
-              href="#"
-              className="text-base font-semibold leading-6 text-gray-600 hover:text-gray-900"
-            >
-              Pricing
-            </a>
+            </Popover> 
             
             <a
               href={DOC_URL}

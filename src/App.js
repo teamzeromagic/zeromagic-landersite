@@ -1,8 +1,7 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from './pages/homepage';
-import Contact from './pages/contact';
-import Navbar from './components/navbar';
+import Contact from './pages/contact'; 
 import Footer from './components/footer';  
 import NavbarExample from './components/navbar-menu';
 import { useState } from 'react';
@@ -12,8 +11,7 @@ function App() {
   const [email , setEmail] = useState();
 
   return (
-    <>
-       {/* <Navbar /> */}
+    <> 
        <NavbarExample />
      <BrowserRouter>
      <Routes>
