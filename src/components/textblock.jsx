@@ -1,4 +1,4 @@
-import { WAITINGLIST_FORM } from "./content2";
+import { WAITINGLIST_FORM } from '../constants';
 
 const TextBlock = () => {
   return (

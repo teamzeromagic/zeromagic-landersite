@@ -1,5 +1,6 @@
 import { Typewriter } from 'react-simple-typewriter'
-import { WAITINGLIST_FORM } from './content2';
+import { WAITINGLIST_FORM } from '../constants';
+
 
 export const Header = () => {
   return (
@@ -53,9 +54,10 @@ export const Header = () => {
         <div className="my-6 flex items-center justify-center gap-x-6">
             <a
               class="text-xl text-white font-medium tracking-tight py-4 px-6 rounded-lg  bg-green"
+              target='blank'
               href={WAITINGLIST_FORM}
             >
-              Join the waiting list
+              Get started now
             </a>
           </div>
 

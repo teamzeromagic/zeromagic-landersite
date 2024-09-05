@@ -5,7 +5,7 @@ import Cross from "../assets/cross.png";
 import Graphql from "../assets/graphql.png";
 import Product from "../assets/product.png";
 
-import { AUTHENTICATION, GRAPHQL, MAGIC_AI, REST_API } from "../constants";
+import { AUTHENTICATION, GRAPHQL, MAGIC_AI, REST_API, WAITINGLIST_FORM } from "../constants";
 
 import GraphqlWorkflow from "../assets/graphql-workflow.png";
 import Mock1 from "../assets/mock1.png";
@@ -15,9 +15,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel"; 
 import { RiPencilRuler2Line } from "react-icons/ri";
 import { LuLineChart, LuNetwork, LuRocket } from "react-icons/lu";
-
-export const WAITINGLIST_FORM =
-  "https://forms.zohopublic.com/zeromagic/form/JoinZeromagicWaitlist/formperma/pHzlI6Y3c7WGeevzUK95oriLUJbQeY2BCGOtaZO57cY";
 
 export const Modules = () => {
   return (

@@ -17,7 +17,7 @@ import {
   PlayCircleIcon, 
 } from "@heroicons/react/20/solid";
 import Logo from "../assets/logo.svg";
-import { WAITINGLIST_FORM } from "./content2";
+import { WAITINGLIST_FORM } from '../constants';
 import { AUTHENTICATION, BLOG_URL, DOC_URL, GRAPHQL, INTEGRATIONS, REST_API } from "../constants";
 
 const products = [
@@ -204,13 +204,22 @@ export default function NavbarExample() {
               Contact
             </a>
           </Popover.Group>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+          <div className="hidden space-x-2 items-center lg:flex lg:flex-1 lg:justify-end">
+
+            <a
+              target="blank"
+              href={WAITINGLIST_FORM}
+              className="whitespace-nowrap px-4 border border-transparent rounded-md shadow-sm text-base text-gray-600"
+            >
+              <strong className="font-bold">Sign up</strong>
+            </a>
+
             <a
               target="blank"
               href={WAITINGLIST_FORM}
               className="whitespace-nowrap px-4 py-2 border border-transparent rounded-md shadow-sm text-sm text-white bg-primary"
             >
-              <strong className="font-bold">Get Started</strong>
+              <strong className="font-bold">Login</strong>
             </a>
          
           </div>
@@ -301,7 +310,7 @@ export default function NavbarExample() {
               target="blank"
               className="whitespace-nowrap px-4 py-2 border border-transparent rounded-md shadow-sm text-sm text-white bg-base"
             >
-              <strong className="font-bold">Get Started</strong>
+              <strong className="font-bold">Login</strong>
             </a>
                 </div>
               </div>

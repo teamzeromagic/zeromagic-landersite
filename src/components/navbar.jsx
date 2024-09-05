@@ -3,7 +3,7 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Logo from "../assets/logo.svg"
 import LogoFull from "../assets/logo-full.svg"
-import { WAITINGLIST_FORM } from './content2'
+import { WAITINGLIST_FORM } from '../constants';
 
 const navigation = [
   { name: 'Product', href: '#product' },
