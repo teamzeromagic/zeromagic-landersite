@@ -559,21 +559,21 @@ export const ShortCut = () => {
       "tag" : "Docs",
       "name" : "Comprehensive Docs",
       "desc" : "Explore our comprehensive guides and tutorials",
-      "url" : "https://docs.zeromagic.in/introduction",
+      "url" : "https://docs.zeromagic.cloud/introduction",
       "img" : Documentation 
     },
     {
       "tag" : "Blog",
       "name" : "Read Our Blog",
       "desc" : "Stay updated with our latest articles and insights",
-      "url" : "https://docs.zeromagic.in/blog/introduction",
+      "url" : "https://docs.zeromagic.cloud/blog/introduction",
       "img" : Blog 
     },
     {
       "tag" : "Product",
       "name" : "Explore Our Product",
       "desc" : "Learn more about our product features and benefits",
-      "url" : "",
+      "url" : "https://console.zeromagic.cloud/",
       "img" : Product 
     },
   ];
@@ -645,28 +645,28 @@ export const Steps = () => {
      "desc" : "Define REST and GraphQL endpoints, establish authentication, and validate data effortlessly",
      "tag" : "Design",
      "icon" :  <RiPencilRuler2Line className="w-7 h-7 text-primary" /> ,
-     "url" : "https://docs.zeromagic.in/basics/modules/quickstart"
+     "url" : "https://docs.zeromagic.cloud/basics/modules/quickstart"
     }, 
     {
       "name" : "Build API Logic",
       "desc" : "Seamlessly integrate APIs, third-party tools, and database queries to enable smooth data flow and interaction",
       "tag" : "Build",
      "icon" :  <LuNetwork className="w-7 h-7 text-primary" />,
-     "url" : "https://docs.zeromagic.in/basics/modules/introduction"
+     "url" : "https://docs.zeromagic.cloud/basics/modules/introduction"
      },
      {
       "name" : "Deploy Instantly",
       "desc" : "Go live in seconds with a single click, eliminating the need for devops tasks. Our platform handles hosting for you",
       "tag" : "Cloud",
      "icon" :  <LuRocket className="w-7 h-7 text-primary" /> ,
-     "url" : "https://docs.zeromagic.in/basics/deployment"
+     "url" : "https://docs.zeromagic.cloud/basics/deployment"
      },
      {
       "name" : "Scale Without Limits",
       "desc" : "Build applications that can effortlessly scale to accommodate growing user bases and increased demand",
       "tag" : "Scale",
      "icon" :  <LuLineChart className="w-7 h-7 text-primary" /> ,
-     "url" : "https://docs.zeromagic.in/introduction"
+     "url" : "https://docs.zeromagic.cloud/introduction"
      }
   ]
 

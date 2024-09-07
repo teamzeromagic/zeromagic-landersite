@@ -5,7 +5,7 @@ export const REST_API = "https://docs.zeromagic.cloud/restapi/overview"
 export const GRAPHQL = "https://docs.zeromagic.cloud/graphql/overview"
 export const AUTHENTICATION = "https://docs.zeromagic.cloud/authentication/overview"
 export const INTEGRATIONS = "https://docs.zeromagic.cloud/integrations/introduction"
-export const MAGIC_AI = "https://docs.zeromagic.cloud/basics/basics/magic-ai"
+export const MAGIC_AI = "https://docs.zeromagic.cloud/magic-ai"
 
 export const GITHUB = "https://github.com/teamzeromagic/"
 
