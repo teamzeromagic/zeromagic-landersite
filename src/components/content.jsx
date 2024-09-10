@@ -1,4 +1,4 @@
-import Authentication from "../assets/graphql.png"
+import Authentication from "../assets/graphql-workflow.png"
 
 export default function Content() {
   return (

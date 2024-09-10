@@ -2,7 +2,7 @@ import Blog from "../assets/blog.png";
 import Documentation from "../assets/documentation.png"; 
 import Check from "../assets/check-mark.png";
 import Cross from "../assets/cross.png";
-import Graphql from "../assets/graphql.png";
+import Graphql from "../assets/graphql-workflow.png";
 import Product from "../assets/product.png";
 
 import { AUTHENTICATION, GRAPHQL, MAGIC_AI, REST_API, WAITINGLIST_FORM } from "../constants";
