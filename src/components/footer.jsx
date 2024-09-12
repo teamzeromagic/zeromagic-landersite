@@ -1,5 +1,5 @@
 import Logo from "../assets/logo-full.svg";
-import { AUTHENTICATION, BLOG_URL, GITHUB, DOC_URL, GRAPHQL, INTEGRATIONS, LEARN_URL, MAGIC_AI, REST_API } from "../constants";
+import { AUTHENTICATION, BLOG_URL, GITHUB, DOC_URL, GRAPHQL, INTEGRATIONS, LEARN_URL, MAGIC_AI, REST_API, YOUTUBE } from "../constants";
 export default function Footer() {
   
   const resources = [
@@ -27,6 +27,11 @@ export default function Footer() {
       id: 4,
       title: "Github",
       link: GITHUB,
+    },
+    {
+      id: 5,
+      title: "Youtube",
+      link: YOUTUBE,
     }
 
   ];

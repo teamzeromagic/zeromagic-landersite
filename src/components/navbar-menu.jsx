@@ -17,7 +17,7 @@ import {
   PlayCircleIcon, 
 } from "@heroicons/react/20/solid";
 import Logo from "../assets/logo.svg";
-import { SIGN_UP, WAITINGLIST_FORM } from '../constants';
+import { SIGN_UP, WAITINGLIST_FORM, YOUTUBE } from '../constants';
 import { AUTHENTICATION, BLOG_URL, DOC_URL, GRAPHQL, INTEGRATIONS, REST_API } from "../constants";
 
 const products = [
@@ -66,7 +66,7 @@ const products = [
   }
 ];
 const callsToAction = [
-  { name: "Watch demo", href: "#demo", icon: PlayCircleIcon },
+  { name: "Tutorials", href: YOUTUBE, icon: PlayCircleIcon },
   { name: "Resources", href: "#resources", icon: AcademicCapIcon  },
 ];
 

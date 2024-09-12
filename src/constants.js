@@ -6,7 +6,7 @@ export const GRAPHQL = "https://docs.zeromagic.cloud/graphql/overview"
 export const AUTHENTICATION = "https://docs.zeromagic.cloud/authentication/overview"
 export const INTEGRATIONS = "https://docs.zeromagic.cloud/integrations/introduction"
 export const MAGIC_AI = "https://docs.zeromagic.cloud/magic-ai"
-
+export const YOUTUBE = "https://www.youtube.com/@zeromagic-cloud" 
 export const GITHUB = "https://github.com/teamzeromagic/"
 
 // export const WAITINGLIST_FORM = "https://forms.zohopublic.com/zeromagic/form/ZeromagicWaitlistForm/formperma/AgfMAJ7hBxvNYCAsKvd-OskB1AOol9hrUNig-l8nN4I"
